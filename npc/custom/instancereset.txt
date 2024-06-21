@@ -1,0 +1,61 @@
+prontera,154,177,5	script	Reseteo de instancias	811,{
+	
+	mes "[Reinicio de Instancias]";
+	mes "Hola, puedo reiniciar la instancia.";
+	mes "Que instancia quieres que reinicie?";
+	next;
+	for(.@i=0;.@i<getarraysize(.instances$);.@i+=5)
+		set .@menu$,.@menu$+.instances$[.@i]+":";
+	set .@ans,select(.@menu$)-1;
+	set .@instance$,.instances$[.@ans*5];
+	set .@qid,atoi(.instances$[(.@ans*5)+1]);
+	set .@item,atoi(.instances$[(.@ans*5)+2]);
+	set .@amt,atoi(.instances$[(.@ans*5)+3]);
+	set .@zeny,atoi(.instances$[(.@ans*5)+4]);
+	next;
+	if(checkquest(.@qid,PLAYTIME)==2 || checkquest(.@qid,PLAYTIME) < 0){
+		mes "[Reinicio de Instancias]";
+		mes "No necesitas reiniciar esta instancia, tienes permitido entrar.";
+		end;
+	}
+	mes "[Reinicio de Instancias]";
+	mes "Entonces quieres reiniciar ^FF0000"+.@instance$+"^000000?";
+	mes "Te costara: ";
+	if(.@item)
+	mes ""+.@amt+"x ^0000FF"+getitemname(.@item)+"^000000";
+	if(.@zeny)
+	mes "y ^0000FF"+.@zeny+"^000000 Zeny!";
+	mes "Te gustaria reiniciarlo ahora?";
+	next;
+	if(select("Si, por favor reinicialo:Mejor no")==2){
+		mes "[Reinicio de Instancias]";
+		mes "Entendido, regresa cuando cambies de opinion.";
+		end;
+	}
+	close2;
+	if(.@item && countitem(.@item)<.@amt)
+		goto L_NotEnough;
+	if(.@zeny && Zeny<.@zeny)
+		goto L_NotEnough;
+	if(.@item)
+		delitem .@item,.@amt;
+	Zeny-=.@zeny;
+	erasequest .@qid;
+	message strcharinfo(0),"La instancia se reinicio!";
+	end;
+
+L_NotEnough:
+	mes "[Reinicio de Instancias]";
+	mes "Perdon pero no tienes suficiente para reiniciar la instancia.";
+end;
+
+OnInit:
+	// Instance Name, Quest ID, Item ID for Reset,Item Amount, Zeny Amount
+	set "[Reinicio de Instancias]","[ Yumi ]";
+	setarray .instances$[0],
+		"Endless Tower","60200","501","10","100000",
+		"Nidhogg Nest","3135","502","30","0",
+		"Sealed Shrine","3045","0","0","999999";
+end;
+	
+}
