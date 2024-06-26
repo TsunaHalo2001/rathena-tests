@@ -99593,3 +99593,9 @@ Body:
       Ammo: true
     Flags:
       BuyingStore: true
+  - Id: 2000000
+    AegisName: Espantaviejas_ticket
+    Name: Espantaviejas ticket
+    Type: Etc
+    Sell: 1000000
+    Weight: 0

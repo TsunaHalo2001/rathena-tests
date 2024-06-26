@@ -38,8 +38,8 @@ prontera,142,228,6	script	Find the Mushroom	1084,{
 	close;
 
 OnInit:
-	.prize = 512;	// Reward item ID
-	.amount = 10;	// Reward item amount
+	.prize = 2000000;	// Reward item ID
+	.amount = 1;	// Reward item amount
 	.GM = 60;		// GM level required to access NPC
 	setarray .maps_list$[0],"izlude","geffen","morocc","prontera"; // Possible maps
 	end;

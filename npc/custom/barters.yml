@@ -45,3 +45,7 @@
 Header:
   Type: BARTER_DB
   Version: 2
+
+Footer:
+  Imports:
+  - Path: npc/custom/barters/cashshop.yml

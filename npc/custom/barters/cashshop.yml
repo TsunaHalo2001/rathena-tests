@@ -1,0 +1,405 @@
+Header:
+  Type: BARTER_DB
+  Version: 1
+
+Body:
+  - Name: cash_shop_mineral
+    Items:
+      - Index: 0
+        Item: LI_HD_Elunium_Box2
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 1
+        Item: LI_HD_Elunium_Box3
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 2
+        Item: Elunium_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 3
+        Item: Elunium_Box_
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 4
+        Item: Enriched_Elunium_Box5
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 5
+        Item: Enriched_Elunium_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 6
+        Item: HD_Elunium_50Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 7
+        Item: A_HD_Elunium_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 8
+        Item: LI_A_HD_Elunium_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 9
+        Item: LI_HD_Oridecon_Box2
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 10
+        Item: LI_HD_Oridecon_Box3
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 11
+        Item: Oridecon_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 12
+        Item: Oridecon_Box_
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 13
+        Item: Enriched_Oridecon_Box5
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 14
+        Item: Enriched_Oridecon_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 15
+        Item: HD_Oridecon_50Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 16
+        Item: A_HD_Oridecon_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 17
+        Item: LI_A_HD_Oridecon_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 18
+        Item: LI_HD_BradiumBox2
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 19
+        Item: A_HD_Bradium_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 20
+        Item: LI_A_HD_Bradium_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 21
+        Item: LI_HD_CarniumBox2
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 22
+        Item: A_HD_Carnium_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 23
+        Item: LI_A_HD_Carnium_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+  - Name: cash_shop_pack
+    Items:
+      - Index: 0
+        Item: Max_Weight_Up_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 1
+        Item: Booster_W_Up_3
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+  - Name: cash_shop_weapon
+    Items:
+      - Index: 0
+        Item: GB_B_Fox
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 1
+        Item: SP_B_Fox
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 2
+        Item: FR_B_Gatling
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 3
+        Item: DF_B_Revolver
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 4
+        Item: PT_B_Axe
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 5
+        Item: PG_B_Sword
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 6
+        Item: BC_B_Spear
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 7
+        Item: HB_B_T_Spear
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 8
+        Item: IW_B_T_Sword
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+  - Name: cash_shop_armor
+    Items:
+      - Index: 0
+        Item: Vanargand_Helm
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 1
+        Item: Evil_Marcher_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 2
+        Item: Republic_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 3
+        Item: Crow_Tengu_Mask
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 4
+        Item: Tengu_Scroll
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 5
+        Item: Crown_Of_Deceit_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 6
+        Item: Immuned_Shield
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+  - Name: cash_shop_costume
+    Items:
+      - Index: 0
+        Item: S_Booster_Armor
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 1
+        Item: S_Booster_Shield
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 2
+        Item: S_Booster_Shoes
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 3
+        Item: S_Booster_Earing
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 4
+        Item: S_Booster_Pandent
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 5
+        Item: S_RK_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 6
+        Item: S_LG_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 7
+        Item: S_NC_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 8
+        Item: S_GN_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 9
+        Item: S_GC_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 10
+        Item: S_SC_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 11
+        Item: S_WL_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 12
+        Item: S_SO_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 13
+        Item: S_AB_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 14
+        Item: S_SR_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 15
+        Item: S_RA_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 16
+        Item: S_WM_B_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 17
+        Item: S_SU_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 18
+        Item: S_SJ_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 19
+        Item: S_KO_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 20
+        Item: S_RL_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 21
+        Item: S_SP_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 22
+        Item: S_NV_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
