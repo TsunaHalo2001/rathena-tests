@@ -84,7 +84,7 @@ OnInit:
 	setarray .reward_amount[0],1;
 
 	// Zeny reward:
-	.reward_zeny = 0;
+	.reward_zeny = 1000000;
 
 // -----------------------------------------------------------
 //  Castles datas.
@@ -401,35 +401,15 @@ while(1) {
 		}
 	}
 	next;
-	switch(select(""+((.CastleWarp || .Active[1])?" ~ Warp to castles...":"")+": ~ Check schedule...: ~ View castle owners...:"+((getgmlevel()<.GMAccess || !getgmlevel())?"":" ~ Manage sessions...")+": ~ ^777777Cancel^000000")) {
+	switch(select(" ~ Check schedule...: ~ View castle owners...:"+((getgmlevel()<.GMAccess || !getgmlevel())?"":" ~ Manage sessions...")+": ~ ^777777Cancel^000000")) {
 	case 1:
-		if (.CastleWarp) set .@clr$,"^0055FF";
-		set .@menu$,"";
-		for(set .@i,0; .@i < .total_region; set .@i,.@i+1) {
-			if (.CastleWarp || .Active[1]&(1<<.@i))
-				set .@menu$, .@menu$+" ~ "+((.Active[1]&(1<<.@i))?.@clr$:"^777777")+.Regions$[.@i]+" Castles^000000";
-			set .@menu$, .@menu$+":";
-		}
-		set .@i, select(.@menu$)-1;
-		set .@menu$,"";
-		for(set .@j,0; .@j < .size_region[.@i]; set .@j,.@j+1) {
-			.@index = getd( ".castle_index_in_region_" + .@i + "[" + .@j + "]" );
-			if (.CastleWarp || .Active[0]&(1<<.@index))
-				set .@menu$, .@menu$+" ~ "+((.Active[0]&(1<<.@index))?.@clr$:"^777777")+getcastlename(.Castles$[.@index])+"^000000";
-			set .@menu$, .@menu$+":";
-		}
-		set .@j, select(.@menu$)-1;
-		.@index = getd( ".castle_index_in_region_" + .@i + "[" + .@j + "]" );
-		warp .Map$[.@index],.MapX[.@index],.MapY[.@index];
-		close;
-	case 2:
 		mes "[Schedule]";
 		if (.Size) {
 			freeloop(1);
 			for(set .@i,0; .@i<.Size; set .@i,.@i+4) {
 				mes "> ^FF0000"+.Days$[$WOE_CONTROL[.@i]]+" ("+Add_Zero($WOE_CONTROL[.@i+1])+"-"+Add_Zero($WOE_CONTROL[.@i+2])+")^000000";
-				for(set .@j,0; .@j<.total_castle; set .@j,.@j+1)
-					if ($WOE_CONTROL[.@i+3]&(1<<.@j)) mes "  ~ "+getcastlename(.Castles$[.@j])+" ^777777("+.Castles$[.@j]+")^000000";
+//				for(set .@j,0; .@j<.total_castle; set .@j,.@j+1)
+//					if ($WOE_CONTROL[.@i+3]&(1<<.@j)) mes "  ~ "+getcastlename(.Castles$[.@j])+" ^777777("+.Castles$[.@j]+")^000000";
 				if (.@i+4 < .Size) mes " ";
 			}
 			freeloop(0);
@@ -437,7 +417,7 @@ while(1) {
 			mes "No times are configured.";
 		next;
 		break;
-	case 3:
+	case 2:
 		mes "[Castle Ownership]";
 		for(set .@i,0; .@i < .total_region; set .@i,.@i+1) {
 			set .@k, .@i*5;
@@ -451,7 +431,7 @@ while(1) {
 		}
 		next;
 		break;
-	case 4:
+	case 3:
 	while(1) {
 		mes "[Session Manager]";
 		mes "There are ^0055FF"+(.Size/4)+" session(s)^000000 configured.";
@@ -612,7 +592,7 @@ while(1) {
 		}
 		if (.@d) { set .@d,0; break; }
 		} break;
-	case 5:
+	case 4:
 		close;
 	} }
 }
