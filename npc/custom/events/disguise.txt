@@ -129,7 +129,7 @@ OnInit:
 	set .Winner,0;
 	set .ResetCounter,0;
 	set .Rounds,10;
-	set .Prize,512;
+	set .Prize,2000000;
 	set .PrizeAmt,1;
 	set .Rule,1;
 	setarray .MVP[0],1038,1039,1046,1059,1086,1087,1112,1115,1147,1150,1157,1159,1190,1251,1252,1272,1312,1373,
