@@ -6,145 +6,85 @@ Body:
   - Name: cash_shop_mineral
     Items:
       - Index: 0
-        Item: LI_HD_Elunium_Box2
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 1
-        Item: LI_HD_Elunium_Box3
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 2
         Item: Elunium_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 3
+      - Index: 1
         Item: Elunium_Box_
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 4
+      - Index: 2
         Item: Enriched_Elunium_Box5
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 5
+      - Index: 3
         Item: Enriched_Elunium_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 6
+      - Index: 4
         Item: HD_Elunium_50Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 7
+      - Index: 5
         Item: A_HD_Elunium_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 8
-        Item: LI_A_HD_Elunium_Box
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 9
-        Item: LI_HD_Oridecon_Box2
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 10
-        Item: LI_HD_Oridecon_Box3
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 11
+      - Index: 6
         Item: Oridecon_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 12
+      - Index: 7
         Item: Oridecon_Box_
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 13
+      - Index: 8
         Item: Enriched_Oridecon_Box5
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 14
+      - Index: 9
         Item: Enriched_Oridecon_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 15
+      - Index: 10
         Item: HD_Oridecon_50Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 16
+      - Index: 11
         Item: A_HD_Oridecon_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 17
-        Item: LI_A_HD_Oridecon_Box
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 18
-        Item: LI_HD_BradiumBox2
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 19
+      - Index: 12
         Item: A_HD_Bradium_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 20
-        Item: LI_A_HD_Bradium_Box
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 21
-        Item: LI_HD_CarniumBox2
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 22
+      - Index: 13
         Item: A_HD_Carnium_Box
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 23
-        Item: LI_A_HD_Carnium_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
