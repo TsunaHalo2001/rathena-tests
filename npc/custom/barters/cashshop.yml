@@ -12,61 +12,61 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 1
-        Item: Elunium_Box_
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 2
-        Item: Enriched_Elunium_Box5
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 3
-        Item: Enriched_Elunium_Box
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 4
-        Item: HD_Elunium_50Box
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 5
-        Item: A_HD_Elunium_Box
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 6
         Item: Oridecon_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 7
+      - Index: 2
+        Item: Elunium_Box_
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 3
         Item: Oridecon_Box_
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 8
+      - Index: 4
+        Item: Enriched_Elunium_Box5
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 5
         Item: Enriched_Oridecon_Box5
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 9
+      - Index: 6
+        Item: Enriched_Elunium_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 7
         Item: Enriched_Oridecon_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 10
+      - Index: 8
+        Item: HD_Elunium_50Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 9
         Item: HD_Oridecon_50Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 10
+        Item: A_HD_Elunium_Box
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -204,13 +204,25 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 6
-        Item: Immuned_Shield
+        Item: Tare_Pope_
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 7
-        Item: Tare_Pope_
+        Item: Black_Devil_Mask_Box
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 8
+        Item: Immuned_Shield
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 9
+        Item: Glove_Of_Archer
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket

@@ -590,6 +590,15 @@ struct Battle_Config
 	int feature_mesitemlink_brackets;
 	int feature_mesitemlink_dbname;
 
+	// Keitenai Resistance Capping
+	int max_ele_def;
+	int max_size_def;
+	int max_race2_def;
+	int max_race_def;
+	int max_class_def;
+	int max_short_def;
+	int max_long_def;
+
 	// autotrade persistency
 	int feature_autotrade;
 	int feature_autotrade_direction;

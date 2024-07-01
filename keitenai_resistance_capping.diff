@@ -1,0 +1,218 @@
+Index: conf/keitenai/keitenai_resist_cap.conf
+===================================================================
+--- conf/keitenai/keitenai_resist_cap.conf	(nonexistent)
++++ conf/keitenai/keitenai_resist_cap.conf	(revision 3)
+@@ -0,0 +1,12 @@
++
++
++
++//=====================================
++// Max resistance capping configuration
++// 100 = max resistance is 100%
++//=====================================
++max_ele_def: 80
++max_size_def: 80
++max_race2_def: 80
++max_race_def: 80
++max_class_def: 80
++max_short_def: 80
++max_long_def: 80
++
+Index: conf/battle_athena.conf
+===================================================================
+--- conf/battle_athena.conf	(revision 2)
++++ conf/battle_athena.conf	(revision 3)
+@@ -59,3 +59,7 @@
+ 
+ //Your custom config goes here.
+ import: conf/import/battle_conf.txt
++
++// Keitenai Resistance Capping
++import: conf/keitenai/keitenai_resist_cap.conf
++
+Index: src/map/battle.cpp
+===================================================================
+--- src/map/battle.cpp	(revision 2)
++++ src/map/battle.cpp	(revision 3)
+@@ -634,8 +634,26 @@
+ 					}
+ 					if (s_defele != ELE_NONE)
+ 						ele_fix += tsd->subdefele[s_defele] + tsd->subdefele[ELE_ALL];
++					if(battle_config.max_ele_def && ele_fix >= battle_config.max_ele_def)
++						ele_fix = battle_config.max_ele_def;
+ 					cardfix = cardfix * (100 - ele_fix) / 100;
+ 				}
++
++				if(battle_config.max_size_def && tsd->subsize[sstatus->size] >= battle_config.max_size_def)
++					tsd->subsize[sstatus->size] = battle_config.max_size_def;
++				if(battle_config.max_size_def && tsd->subsize[SZ_ALL] >= battle_config.max_size_def)
++					tsd->subsize[SZ_ALL] = battle_config.max_size_def;
++				if(battle_config.max_race2_def && tsd->subrace2[s_race2] >= battle_config.max_race2_def)
++					tsd->subrace2[s_race2] = battle_config.max_race2_def;
++				if(battle_config.max_race_def && tsd->subrace[sstatus->race] >= battle_config.max_race_def)
++					tsd->subrace[sstatus->race] = battle_config.max_race_def;
++				if(battle_config.max_race_def && tsd->subrace[RC_ALL] >= battle_config.max_race_def)
++					tsd->subrace[RC_ALL] = battle_config.max_race_def;
++				if(battle_config.max_class_def && tsd->subclass[sstatus->class_] >= battle_config.max_class_def)
++					tsd->subclass[sstatus->class_] = battle_config.max_class_def;
++				if(battle_config.max_class_def && tsd->subclass[CLASS_ALL] >= battle_config.max_class_def)
++					tsd->subclass[CLASS_ALL] = battle_config.max_class_def;
++
+ 				cardfix = cardfix * (100 - tsd->subsize[sstatus->size] - tsd->subsize[SZ_ALL]) / 100;
+ 				cardfix = cardfix * (100 - tsd->subrace2[s_race2]) / 100;
+ 				cardfix = cardfix * (100 - tsd->subrace[sstatus->race] - tsd->subrace[RC_ALL]) / 100;
+@@ -649,9 +667,14 @@
+ 				}
+ #ifndef RENEWAL
+ 				//It was discovered that ranged defense also counts vs magic! [Skotlex]
+-				if( flag&BF_SHORT )
++				if( flag&BF_SHORT ){
++					if(battle_config.max_short_def && tsd->bonus.near_attack_def_rate >= battle_config.max_short_def)
++						tsd->bonus.near_attack_def_rate = battle_config.max_short_def;
+ 					cardfix = cardfix * (100 - tsd->bonus.near_attack_def_rate) / 100;
+-				else
++				}
++				else{
++					if(battle_config.max_long_def && tsd->bonus.long_attack_def_rate >= battle_config.max_long_def)
++						tsd->bonus.long_attack_def_rate = battle_config.max_long_def;
+ 					cardfix = cardfix * (100 - tsd->bonus.long_attack_def_rate) / 100;
+ #endif
+ 				cardfix = cardfix * (100 - tsd->bonus.magic_def_rate) / 100;
+@@ -814,6 +837,8 @@
+ 							continue;
+ 						ele_fix += tsd->subele2[i].rate;
+ 					}
++					if (battle_config.max_ele_def && ele_fix >= battle_config.max_ele_def)
++						ele_fix = battle_config.max_ele_def;
+ 					cardfix = cardfix * (100 - ele_fix) / 100;
+ 
+ 					if( left&1 && lh_ele != rh_ele ) {
+@@ -828,11 +853,29 @@
+ 								continue;
+ 							ele_fix_lh += tsd->subele2[i].rate;
+ 						}
++						if (battle_config.max_ele_def && ele_fix_lh >= battle_config.max_ele_def)
++							ele_fix_lh = battle_config.max_ele_def;
+ 						cardfix = cardfix * (100 - ele_fix_lh) / 100;
+ 					}
+ 
+ 					cardfix = cardfix * (100 - tsd->subdefele[s_defele] - tsd->subdefele[ELE_ALL]) / 100;
+ 				}
++				
++				if(battle_config.max_size_def && tsd->subsize[sstatus->size] >= battle_config.max_size_def)
++					tsd->subsize[sstatus->size] = battle_config.max_size_def;
++				if(battle_config.max_size_def && tsd->subsize[SZ_ALL] >= battle_config.max_size_def)
++					tsd->subsize[SZ_ALL] = battle_config.max_size_def;
++				if(battle_config.max_race2_def && tsd->subrace2[s_race2] >= battle_config.max_race2_def)
++					tsd->subrace2[s_race2] = battle_config.max_race2_def;
++				if(battle_config.max_race_def && tsd->subrace[sstatus->race] >= battle_config.max_race_def)
++					tsd->subrace[sstatus->race] = battle_config.max_race_def;
++				if(battle_config.max_race_def && tsd->subrace[RC_ALL] >= battle_config.max_race_def)
++					tsd->subrace[RC_ALL] = battle_config.max_race_def;
++				if(battle_config.max_class_def && tsd->subclass[sstatus->class_] >= battle_config.max_class_def)
++					tsd->subclass[sstatus->class_] = battle_config.max_class_def;
++				if(battle_config.max_class_def && tsd->subclass[CLASS_ALL] >= battle_config.max_class_def)
++					tsd->subclass[CLASS_ALL] = battle_config.max_class_def;
++
+ 				cardfix = cardfix * (100 - tsd->subsize[sstatus->size] - tsd->subsize[SZ_ALL]) / 100;
+ 				cardfix = cardfix * (100 - tsd->subrace2[s_race2]) / 100;
+ 				cardfix = cardfix * (100 - tsd->subrace[sstatus->race] - tsd->subrace[RC_ALL]) / 100;
+@@ -843,10 +886,16 @@
+ 						break;
+ 					}
+ 				}
+-				if( flag&BF_SHORT )
++				if( flag&BF_SHORT ){
++					if(battle_config.max_short_def && tsd->bonus.near_attack_def_rate >= battle_config.max_short_def)
++						tsd->bonus.near_attack_def_rate = battle_config.max_short_def;
+ 					cardfix = cardfix * (100 - tsd->bonus.near_attack_def_rate) / 100;
+-				else	// BF_LONG (there's no other choice)
++				}
++				else{	// BF_LONG (there's no other choice)
++					if(battle_config.max_long_def && tsd->bonus.long_attack_def_rate >= battle_config.max_long_def)
++						tsd->bonus.long_attack_def_rate = battle_config.max_long_def;
+ 					cardfix = cardfix * (100 - tsd->bonus.long_attack_def_rate) / 100;
++				}
+ 				if( tsd->sc.data[SC_DEF_RATE] )
+ 					cardfix = cardfix * (100 - tsd->sc.data[SC_DEF_RATE]->val1) / 100;
+ 				APPLY_CARDFIX(damage, cardfix);
+@@ -870,17 +919,41 @@
+ 					}
+ 					if (s_defele != ELE_NONE)
+ 						ele_fix += tsd->subdefele[s_defele] + tsd->subdefele[ELE_ALL];
++					if (battle_config.max_ele_def && ele_fix >= battle_config.max_ele_def)
++						ele_fix = battle_config.max_ele_def;
+ 					cardfix = cardfix * (100 - ele_fix) / 100;
+ 				}
++
++				if(battle_config.max_size_def && tsd->subsize[sstatus->size] >= battle_config.max_size_def)
++					tsd->subsize[sstatus->size] = battle_config.max_size_def;
++				if(battle_config.max_size_def && tsd->subsize[SZ_ALL] >= battle_config.max_size_def)
++					tsd->subsize[SZ_ALL] = battle_config.max_size_def;
++				if(battle_config.max_race2_def && tsd->subrace2[s_race2] >= battle_config.max_race2_def)
++					tsd->subrace2[s_race2] = battle_config.max_race2_def;
++				if(battle_config.max_race_def && tsd->subrace[sstatus->race] >= battle_config.max_race_def)
++					tsd->subrace[sstatus->race] = battle_config.max_race_def;
++				if(battle_config.max_race_def && tsd->subrace[RC_ALL] >= battle_config.max_race_def)
++					tsd->subrace[RC_ALL] = battle_config.max_race_def;
++				if(battle_config.max_class_def && tsd->subclass[sstatus->class_] >= battle_config.max_class_def)
++					tsd->subclass[sstatus->class_] = battle_config.max_class_def;
++				if(battle_config.max_class_def && tsd->subclass[CLASS_ALL] >= battle_config.max_class_def)
++					tsd->subclass[CLASS_ALL] = battle_config.max_class_def;
++
+ 				cardfix = cardfix * (100 - tsd->subsize[sstatus->size] - tsd->subsize[SZ_ALL]) / 100;
+ 				cardfix = cardfix * (100 - tsd->subrace2[s_race2]) / 100;
+ 				cardfix = cardfix * (100 - tsd->subrace[sstatus->race] - tsd->subrace[RC_ALL]) / 100;
+ 				cardfix = cardfix * (100 - tsd->subclass[sstatus->class_] - tsd->subclass[CLASS_ALL]) / 100;
+ 				cardfix = cardfix * (100 - tsd->bonus.misc_def_rate) / 100;
+-				if( flag&BF_SHORT )
++				if( flag&BF_SHORT ){
++					if(battle_config.max_short_def && tsd->bonus.near_attack_def_rate >= battle_config.max_short_def)
++						tsd->bonus.near_attack_def_rate = battle_config.max_short_def;
+ 					cardfix = cardfix * (100 - tsd->bonus.near_attack_def_rate) / 100;
+-				else	// BF_LONG (there's no other choice)
++				}
++				else{	// BF_LONG (there's no other choice)
++					if(battle_config.max_long_def && tsd->bonus.long_attack_def_rate >= battle_config.max_long_def)
++						tsd->bonus.long_attack_def_rate = battle_config.max_long_def;
+ 					cardfix = cardfix * (100 - tsd->bonus.long_attack_def_rate) / 100;
++				}
+ 				APPLY_CARDFIX(damage, cardfix);
+ 			}
+ 			break;
+@@ -8150,6 +8223,15 @@
+ 	{ "custom_cell_stack_limit",            &battle_config.custom_cell_stack_limit,         1,      1,      255,            },
+ 	{ "dancing_weaponswitch_fix",           &battle_config.dancing_weaponswitch_fix,        1,      0,      1,              },
+ 
++	// Keitenai Resistance Capping
++	{ "max_ele_def",                        &battle_config.max_ele_def,                     0,      0,      200,            },
++	{ "max_size_def",                       &battle_config.max_size_def,                    0,      0,      200,            },
++	{ "max_race2_def",                      &battle_config.max_race2_def,                   0,      0,      200,            },
++	{ "max_race_def",                       &battle_config.max_race_def,                    0,      0,      200,            },
++	{ "max_class_def",                      &battle_config.max_class_def,                   0,      0,      200,            },
++	{ "max_short_def",                      &battle_config.max_short_def,                   0,      0,      200,            },
++	{ "max_long_def",                       &battle_config.max_long_def,                    0,      0,      200,            },
++
+ 	// eAthena additions
+ 	{ "item_logarithmic_drops",             &battle_config.logarithmic_drops,               0,      0,      1,              },
+ 	{ "item_drop_common_min",               &battle_config.item_drop_common_min,            1,      0,      10000,          },
+Index: src/map/battle.hpp
+===================================================================
+--- src/map/battle.hpp	(revision 2)
++++ src/map/battle.hpp	(revision 3)
+@@ -555,6 +555,15 @@
+ 	int update_enemy_position;
+ 	int devotion_rdamage;
+ 
++	// Keitenai Resistance Capping
++	int max_ele_def;
++	int max_size_def;
++	int max_race2_def;
++	int max_race_def;
++	int max_class_def;
++	int max_short_def;
++	int max_long_def;
++
+ 	// autotrade persistency
+ 	int feature_autotrade;
+ 	int feature_autotrade_direction;
