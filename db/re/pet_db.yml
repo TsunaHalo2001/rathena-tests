@@ -1028,7 +1028,7 @@ Body:
     FoodItem: Vital_Flower
     Fullness: 3
     IntimacyFed: 10
-    CaptureRate: 50
+    CaptureRate: 2500
     SpecialPerformance: false
     Script: >
       if (getpetinfo(PETINFO_INTIMATE) == PET_INTIMATE_LOYAL) {
@@ -1475,6 +1475,7 @@ Body:
     Fullness: 3
     IntimacyFed: 50
     CaptureRate: 2000
+    AllowAutoFeed: true
     Script: >
       .@i = getpetinfo(PETINFO_INTIMATE);
       
