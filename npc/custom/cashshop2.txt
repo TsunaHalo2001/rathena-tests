@@ -2,23 +2,32 @@ prontera,146,173,6	script	Cash Shop	998,{
     mes "[Cash Shop]";
     mes "Buy items from another reality!";
     next;
-    switch( select( "Minerals", "Packs", "Weapons", "Armor", "Costumes", "Cancel" ) ) {
+    switch( select( "Minerals", "Packs", "Weapons", "Armor", "Costumes", "Taming", "Cancel" ) ) {
     case 1:
+        close2;
         callshop "cash_shop_mineral";
         end;
     case 2:
+        close2;
         callshop "cash_shop_pack";
         end;
     case 3:
+        close2;
         callshop "cash_shop_weapon";
         end;
     case 4:
+        close2;
         callshop "cash_shop_armor";
         end;
     case 5:
+        close2;
         callshop "cash_shop_costume";
         end;
     case 6:
+        close2;
+        callshop "cash_shop_taming";
+        end;
+    case 7:
         mes "[Cash Shop]";
         mes "Come back anytime";
         close;

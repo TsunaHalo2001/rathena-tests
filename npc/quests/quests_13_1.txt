@@ -8241,6 +8241,7 @@ mid_camp,69,144,0	script	Ferocious Gorurug	421,{
 		mes "I'm sorry, but I'm off-duty.";
 		mes "I can't accept any fish right now.";
 		mes "Come back tomorrow, alright?";
+		erasequest 12060;
 		close;
 	}
 	else {
@@ -8280,21 +8281,21 @@ spl_fild02,314,165,0	script	School of Fish#1::Fishinghole	844,{
 			}
 		}
 		set .@rhea_ran,rand(1,70);
-		if (.@rhea_ran < 20) getitem 6039,1; //Piece_Of_Fish
-		else if (.@rhea_ran == 20) getitem 908,1; //Spawn
+		getitem 6039,1; //Piece_Of_Fish
+		getitem 6049,1; //Marlin
+		if (.@rhea_ran == 20) getitem 908,1; //Spawn
 		else if (.@rhea_ran == 21) getitem 909,1; //Jellopy
 		else if (.@rhea_ran == 22) getitem 963,1; //Sharp_Scale
 		else if (.@rhea_ran == 23) getitem 956,1; //Gill
-		else if (.@rhea_ran == 24) getitem 6049,1; //Marlin
 		else if (.@rhea_ran == 25) getitem 918,1; //Sticky_Webfoot
 		else if (.@rhea_ran == 26) getitem 960,1; //Nipper
 		else if (.@rhea_ran == 27) getitem 910,1; //Garlet
 		else if (.@rhea_ran == 28) getitem 938,1; //Sticky_Mucus
 		else if ((.@rhea_ran > 28) && (.@rhea_ran < 40)) getitem 7049,1; //Stone
-		else {
-			mes "Nothing was caught.";
-			close;
-		}
+		//else {
+		//	mes "Nothing was caught.";
+		//	close;
+		//}
 		if (rand(1,200) == 3) {
 			getitem 644,1; //Gift_Box
 			mapannounce strcharinfo(3),strcharinfo(0) + " has caught a Gift Box!!",bc_map,"0x00ffff";

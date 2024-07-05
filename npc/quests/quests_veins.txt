@@ -4830,9 +4830,9 @@ ve_fild07,235,42,3	script	Silk Sand Camel	938,{
 					mes "safe to eat... Hopefully.^000000";
 					getitem 516,2; //Sweet_Potato
 				}
-				delitem 519,2; //Milk
-				delitem 511,20; //Green_Herb
-				delitem 909,10; //Jellopy
+				delitem 519,1; //Milk
+				delitem 511,5; //Green_Herb
+				delitem 909,2; //Jellopy
 				close;
 			case 2:
 				mes "[Silk Sand Camel]";
@@ -4904,9 +4904,9 @@ ve_fild07,235,42,3	script	Silk Sand Camel	938,{
 					set rachel_camel, 17;
 					changequest 3075,3076;
 				}
-				delitem 519,2; //Milk
-				delitem 511,20; //Green_Herb
-				delitem 909,10; //Jellopy
+				delitem 519,1; //Milk
+				delitem 511,5; //Green_Herb
+				delitem 909,2; //Jellopy
 				delitem 713,1; //Empty_Bottle
 				close;
 			default:
@@ -4920,9 +4920,9 @@ ve_fild07,235,42,3	script	Silk Sand Camel	938,{
 				mes "And... Out pops a Sweet";
 				mes "Potato. It's probably";
 				mes "safe to eat... Maybe.^000000";
-				delitem 519,2; //Milk
-				delitem 511,20; //Green_Herb
-				delitem 909,10; //Jellopy
+				delitem 519,1; //Milk
+				delitem 511,5; //Green_Herb
+				delitem 909,2; //Jellopy
 				getitem 516,1; //Sweet_Potato
 				close;
 			}
@@ -4945,9 +4945,9 @@ ve_fild07,235,42,3	script	Silk Sand Camel	938,{
 			}
 			next;
 			mes "["+strcharinfo(0)+"]";
-			mes "^4D4DFF2 Milk^000000,";
-			mes "^4D4DFF20 Green Herbs^000000,";
-			mes "^4D4DFF10 Jellopies^000000, and";
+			mes "^4D4DFF1 Milk^000000,";
+			mes "^4D4DFF5 Green Herbs^000000,";
+			mes "^4D4DFF2 Jellopies^000000, and";
 			mes "^4D4DFF1 Empty Bottles^000000.";
 			next;
 			mes "[Silk Sand Camel]";
