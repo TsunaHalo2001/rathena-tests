@@ -497,6 +497,24 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 40
+        Item: Chatty_Parrot
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 41
+        Item: Blue_Poring_Bubble
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 42
+        Item: FortunetellinSealed
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_costume
     Items:
       - Index: 0
