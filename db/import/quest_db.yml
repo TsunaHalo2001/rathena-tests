@@ -48,3 +48,12 @@
 Header:
   Type: QUEST_DB
   Version: 3
+
+Body:
+# Alchemist protection quest
+  - Id: 2000000
+    Title: Search for the childhood friend
+  - Id: 2000001
+    Title: Recollect Anolian Skin
+  - Id: 2000002
+    Title: Recollect Bradium and Carnium
