@@ -207,6 +207,42 @@ Body:
       bonus2 bSubRace,RC_DemiHuman,24;
       bonus2 bSubRace,RC_Player_Human,24;
 
+#Espantaviejas ticket
+  - Id: 2000000
+    AegisName: Espantaviejas_ticket
+    Name: Espantaviejas ticket
+    Type: Etc
+    Sell: 1000000
+    Weight: 0
+
+#Alchemist protection
+  - Id: 2000001
+    AegisName: Alchemist_Protection
+    Name: Alchemist Protection
+    Type: Delayconsume
+    Buy: 1000
+    Weight: 0
+    Flags:
+      NoConsume: true
+    Script: |
+      itemskill 479, 5, false;
+
+#Sobek sweat
+  - Id: 2000002
+    AegisName: Sobek_Sweat
+    Name: Sobek Sweat
+    Type: Etc
+    Sell: 1000
+    Weight: 0
+
+#Mjolnir fragment
+  - Id: 2000003
+    AegisName: Mjolnir_Fragment
+    Name: Mjolnir Fragment
+    Type: Etc
+    Sell: 1000
+    Weight: 0
+
 #Body:
 # THQ Quest Items
 #=============================================================

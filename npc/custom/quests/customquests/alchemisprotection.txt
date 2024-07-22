@@ -1,0 +1,221 @@
+geffen_in,142,166,3	script	??	826,{
+// 5.
+	if (checkquest(2000001) == 1 && countitem(2000002) > 0) {
+		mes "[?]";
+		mes "Apestas a magia, se siente como el olor de mi amigo, pero es diferente, no sé por qué";
+		mes "A?n as?, ya llevo muchos a?os intentando reparar una vieja piedra que ya olvidé como consegu?";
+		mes "No importa con qué la pegue, no solo no se une, sino que el pegamento se escurre";
+		mes "Pero ese l?quido que tienes ah? se ve de buena calidad, decidido";
+		mes "A la piedra le falta ser reforzada con un mineral tra?do desde fuera de Midgard";
+		mes "Es un mineral usado para reforzar a?n m?s tus armas y armaduras. Dar 20 Bradium y 20 Carnium.";
+		completequest 2000001;
+		getexp 100000,50000;
+		setquest 2000002;
+		close;
+	}
+
+// 6.
+	else if (checkquest(2000002) == 1) {
+		mes "[?]";
+		mes "?Tienes los minerales?";
+		close2;
+		if (countitem(6223) < 20 || countitem(6224) < 20) {
+			mes "[?]";
+			mes "No tienes los minerales suficientes.";
+			close;
+		}
+		mes "[?]";
+		mes "Perfecto, hora de hacer magia, ?Esto era lo que quer?as cierto?";
+		mes "Si llegas a la punta de la tierra de los alquimistas haré algo con eso que tienes all?.";
+		getitem 2000003,1;
+		delitem 6223,20;
+		delitem 6224,20;
+		getexp 100000,50000;
+		close;
+	}
+
+	else if (countitem(2000003) > 0) {
+		mes "[?]";
+		mes "Ve por la otra parte.";
+		close;
+	}
+
+	else if (checkquest(2000002) == 2) {
+		mes "[Brok]";
+		mes "Dale un buen uso elegido.";
+		close;
+	}
+	
+// 1.
+	else {
+		mes "[?]";
+		mes "Tenia un amigo de la infancia que le obsesionaban los dioses de otras tierras";
+		mes "Lo ultimo que supo de el es que se fue a vivir a Morocc.";
+		if (Class == JOB_CREATOR) {
+			setquest 2000000;
+		}
+		close;
+	}
+}
+
+// 2.
+moc_ruins,118,174,3	script	Old Lady	78,{
+    mes "[Old Lady]";
+    mes "Hace tiempo un joven que solo hablaba de dioses de las tierras del desierto";
+    mes "Tuvo que mudarse a Einbroch.";
+    close;
+}
+
+ein_in01,24,31,3	script	???	536,{
+// 3.
+    if (checkquest(2000000) == 1) {
+		mes "[?]";
+		mes "Hace mucho tiempo el dios Thor viaj? a tierras m?s calientes que Muspelheim";
+		mes "Alli encontr? una familia de dioses poderosos,";
+		mes "Y vi? que entre tal tierra ?rida hab?a un r?o muy extenso";
+		next;
+		mes "[?]";
+		mes "Al acercarse demasiado un Dios desconocido se interpuso";
+		mes "Thor sintiendo el poder que pose?a decidi? enfrentarlo";
+		mes "Pero por un descuido involucraron a las personas de esas tierras";
+		next;
+		mes "[?]";
+		mes "Al final ninguno pudo pelear al 100% contra su oponente";
+		mes "Pero ambos notaron que cada que tuvieron la oportunidad de matarse no lo hicieron";
+		mes "Hasta que el otro dios aprovech? el ?ltimo descuido de Thor y logr? incapacitarlo";
+		next;
+		mes "[?]";
+		mes "Ambos admiraron su responsabilidad al evitar casualidaded y decidieron hacer una promesa";
+		mes "Como dioses protectores iban a unir fuerzas para proteger la humanidad";
+		mes "Hasta que su trabajo finalmente terminara no luchar?an en serio";
+		next;
+		mes "[?]";
+		mes "Pero por desgracia no volvieron a verse.";
+		mes "Se dice que un enano sigui? a Thor e hizo de su promesa un artefacto";
+		mes "Pero la promesa era tan poderosa que no soport? el recipiente en el que fué guardada";
+		next;
+		mes "[?]";
+		mes "As? que se parti? en 2, y el poder de la promesa termin? en otro mundo";
+		mes "La leyenda dice que solo un alquimista que haya trascendido";
+		mes "Ser? capaz de sintetizar un materia tan poderoso y resistente";
+		mes "Que el poder de la promesa volver? del mundo al que fué.";
+		next;
+		mes "[?]";
+		mes "?Quieres intentarlo?";
+		close2;
+		switch(select("S?", "No")) {
+			case 1:
+				mes "[?]";
+				mes "El alquimista debe ser tan poderoso como la promesa";
+				mes "As? que debes demostrarme que ser?as capaz de derrotar a Thor y al mismo Sobek...";
+				mes "Uy. Ignora lo que dije, tr?eme 50 Anolian Skin y lo consideraré.";
+				completequest 2000000;
+				getexp 100000,50000;
+				setquest 2000001;
+				close;
+			case 2:
+				mes "[?]";
+				mes "Vuelve cuando estés listo.";
+				close;
+		}
+	}
+
+// 4.
+	else if (checkquest(2000001) == 1) {
+		mes "[?]";
+		mes "?Oh! ?Has vuelto!";
+		mes "?Tienes los Anolian Skin?";
+		close2;
+		if (countitem(7003) < 50) {
+			mes "[?]";
+			mes "No tienes los Anolian Skin suficientes.";
+			close;
+		}
+		mes "[?]";
+		mes "Perfecto, esto bastar?, te falta la otra parte";
+		mes "Hasta entonces te esperaré en la punta de la ciudad de la alquimia.";
+		getitem 2000002,1;
+		delitem 7003,50;
+		getexp 100000,50000;
+		close;
+	}
+
+	else if (countitem(2000002) > 0) {
+		mes "[?]";
+		mes "Ve por la otra parte.";
+		close;
+	}
+
+	else if (checkquest(2000002) == 2) {
+		mes "[Loki]";
+		mes "Dale un buen uso elegido.";
+		close;
+	}
+
+	else {
+		mes "[?]";
+		mes "No tengo nada que decirte.";
+		close;
+	}
+}
+
+// 7.
+c_tower3,127,236,3	script	Loki	2937,{
+	if (checkquest(2000002) == 1 && countitem(2000002) > 0 && countitem(2000003) > 0 && countitem(7139) == 0) {
+		mes "[Loki]";
+		mes "Hola hola, no me reconoces?";
+		mes "Soy Loki junto a mi amigo Brok traeremos de vuelta la promesa de hace mucho tiempo,";
+		mes "Solo necesitamos que nos traigas Glistening Coat para reforzar el recipiente,";
+		mes "No sabemos que poder habr? adquirido la promesa mientras estaba en otro mundo,";
+		mes "As? que debe ser lo mas resistente posible. Dar 1 Glistening Coat.";
+		close;
+	}
+
+	else if (checkquest(2000002) == 1 && countitem(2000002) > 0 && countitem(2000003) > 0 && countitem(7139) > 0) {
+		mes "[Loki]";
+		mes "Bien hecho, hagamos magia, espero que este poder te sirva del algo.";
+		completequest 2000002;
+		getexp 500000, 250000;
+		delitem 7139, 1;
+		delitem 2000003, 1;
+		getitem 2000002, 1;
+		getitem 2000001, 1;
+		close;
+	}
+
+	else {
+		mes "[Loki]";
+		mes "No tengo nada que decirte.";
+		close;
+	}
+}
+
+c_tower3,132,236,3	script	Brok	826,{
+	if (checkquest(2000002) == 1 && countitem(2000002) > 0 && countitem(2000003) > 0 && countitem(7139) == 0) {
+		mes "[Brok]";
+		mes "Hola hola";
+		mes "Soy Brok junto a mi amigo Loki traeremos de vuelta la promesa de hace mucho tiempo,";
+		mes "Solo necesitamos que nos traigas Glistening Coat para reforzar el recipiente,";
+		mes "No sabemos que poder habr? adquirido la promesa mientras estaba en otro mundo,";
+		mes "As? que debe ser lo mas resistente posible. Dar 1 Glistening Coat.";
+		close;
+	}
+
+	else if (checkquest(2000002) == 1 && countitem(2000002) > 0 && countitem(2000003) > 0 && countitem(7139) > 0) {
+		mes "[Brok]";
+		mes "Bien hecho, hagamos magia, espero que este poder te sirva del algo.";
+		completequest 2000002;
+		getexp 500000, 250000;
+		delitem 7139, 1;
+		delitem 2000003, 1;
+		getitem 2000002, 1;
+		getitem 2000001, 1;
+		close;
+	}
+
+	else {
+		mes "[Brok]";
+		mes "No tengo nada que decirte.";
+		close;
+	}
+}
