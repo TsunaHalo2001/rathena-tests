@@ -1,0 +1,35 @@
+prontera,158,193,3	script	Storage Manager	20613,{
+	mes "[ Storage Manager ]";
+	mes "Hello there! I am the Storage Manager.";
+	mes "I can help you with your storage needs.";
+	mes "Which storage would you like to access?";
+	next;
+	switch( select( "Storage 1", "Storage 2", "Storage 3", "Storage 4","Cancel" ) ) {
+	case 1:
+		close2;
+		openstorage;
+		end;
+		break;
+	case 2:
+		close2;
+		openstorage2 1;
+		end;
+		break;
+	case 3:
+		close2;
+		openstorage2 2;
+		end;
+		break;
+	case 4:
+		close2;
+		openstorage2 3;
+		end;
+		break;
+	case 5:
+		mes "[ Storage Manager ]";
+		mes "Alright, come back if you need anything!";
+		close;
+		end;
+		break;
+	}
+}
