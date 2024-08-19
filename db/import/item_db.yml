@@ -184,23 +184,6 @@ Body:
       bonus2 bSubRace,RC_Insect,3;
       bonus2 bSubRace,RC_Brute,10;
 
-#Golden thief bug patch: neutral
-  - Id: 27109
-    Script: |
-      bonus2 bSubEle,Ele_Neutral,8;
-      bonus bMaxHP,500;
-  - Id: 4133
-    Script: |
-      bonus2 bSubEle,Ele_Neutral,10;
-  - Id: 4442
-    Script: |
-      bonus2 bSubEle,Ele_Neutral,10;
-      bonus2 bAddEle,Ele_Neutral,5;
-  - Id: 4309
-    Script: |
-      bonus bDef,1;
-      bonus2 bSubEle,Ele_Neutral,5;
-
 #Orcs patch: Demi-human
   - Id: 4058
     Script: |
