@@ -66137,7 +66137,7 @@ Body:
       NoMail: false
       NoAuction: true
     Script: |
-      /* callfunc "F_Kachua_Key"; */
+      callfunc "F_Kachua_Key";
   - Id: 23921
     AegisName: Season_Evt_Reward
     Name: Event Reward Box
