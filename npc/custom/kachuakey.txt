@@ -1,0 +1,3 @@
+function	script	F_Kachua_Key	{
+	.@value = rand(1,100);
+}
