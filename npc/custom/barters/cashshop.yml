@@ -457,6 +457,72 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 50
+        Item: Upg_Dagger
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 51
+        Item: Upg_Lance
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 52
+        Item: Upg_Revolver
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 53
+        Item: Upg_Mace
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 54
+        Item: Upg_Bow
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 55
+        Item: Upg_Book
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 56
+        Item: Upg_Staff
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 57
+        Item: Upg_Katar
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 58
+        Item: Upg_Twohand_Sword
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 59
+        Item: Upg_Two_Handed_Axe
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 60
+        Item: Upg_Huuma_Shuriken
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_armor
     Items:
       # Booster Equipment
@@ -760,6 +826,12 @@ Body:
             Amount: 10
       - Index: 49
         Item: Peuz_Manteau
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 50
+        Item: Fallen_Angel_Wing
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket

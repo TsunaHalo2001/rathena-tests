@@ -1,4 +1,4 @@
-prontera,158,193,3	script	Storage Manager	20613,{
+prontera,158,193,3	script	Storage Manager	1699,{
 	mes "[ Storage Manager ]";
 	mes "Hello there! I am the Storage Manager.";
 	mes "I can help you with your storage needs.";
@@ -12,17 +12,17 @@ prontera,158,193,3	script	Storage Manager	20613,{
 		break;
 	case 2:
 		close2;
-		openstorage2 1;
+		openstorage2 1, STOR_MODE_GET|STOR_MODE_PUT;
 		end;
 		break;
 	case 3:
 		close2;
-		openstorage2 2;
+		openstorage2 2, STOR_MODE_GET|STOR_MODE_PUT;
 		end;
 		break;
 	case 4:
 		close2;
-		openstorage2 3;
+		openstorage2 3, STOR_MODE_GET|STOR_MODE_PUT;
 		end;
 		break;
 	case 5:
