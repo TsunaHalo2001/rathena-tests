@@ -91,7 +91,6 @@ Body:
             Amount: 10
   - Name: cash_shop_pack
     Items:
-      # Tickets generales
       - Index: 0
         Item: Max_Weight_Up_Box
         RequiredItems:
@@ -104,7 +103,6 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      # Booster equipment
       - Index: 2
         Item: Metal_7_Ticket
         RequiredItems:
@@ -135,7 +133,6 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      # True Hunting
       - Index: 7
         Item: True_Hunting_9Refine
         RequiredItems:
@@ -308,6 +305,30 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 21
+        Item: Fancy_Phantom_Mask
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 22
+        Item: Flaward_Hat_EXE
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 23
+        Item: Shaokahn_Helmet_EXE
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 24
+        Item: Niflheim_Bunny_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_garment
     Items:
       - Index: 0
@@ -386,7 +407,6 @@ Body:
             Amount: 10
   - Name: cash_shop_weapon
     Items:
-      # Booster Equipment
       - Index: 0
         Item: Metal_Two_Hand_Sword
         RequiredItems:
@@ -753,6 +773,24 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 61
+        Item: Scythe_Of_Ice_Flame
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 62
+        Item: Volcano_Knife
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 63
+        Item: FullForce
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_shield
     Items:
       - Index: 0
@@ -795,6 +833,12 @@ Body:
             Amount: 10
       - Index: 5
         Item: Peuz_Greave
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 6
+        Item: Moaning_of_EvilSpirits
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -861,9 +905,26 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 10
+        Item: Record_Merchant_TH
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 11
+        Item: ChemicalGlove
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 12
+        Item: Fenrir_Chain
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_costume
     Items:
-      # Booster Equipment
       - Index: 0
         Item: S_Booster_Armor
         RequiredItems:
@@ -1002,7 +1063,6 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      # Cash Shop
       - Index: 23
         Item: C_Reginleif_Hairband
         RequiredItems:
@@ -1183,6 +1243,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 80
+      - Index: 53
+        Item: S_Mechanic_Cube
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 60
   - Name: cash_shop_taming
     Items:
       - Index: 0
@@ -1267,6 +1333,18 @@ Body:
             Amount: 1
       - Index: 9
         Item: StarSoul_Scroll
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 1
+      - Index: 10
+        Item: 2015_Special_Scroll
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 1
+      - Index: 11
+        Item: 2016_Special_Scroll
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
