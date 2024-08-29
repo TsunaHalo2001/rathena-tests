@@ -905,6 +905,90 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 117
+        Item: Arbitrator_Shawl_US
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 118
+        Item: aegis_400421
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 119
+        Item: aegis_400454
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 120
+        Item: aegis_400453
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 121
+        Item: Demons_Familiar_
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 122
+        Item: Ghost_Fire
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 123
+        Item: aegis_400416
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 124
+        Item: Squirrel_Ear_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 125
+        Item: aegis_400437
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 126
+        Item: aegis_400438
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 127
+        Item: aegis_400408
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 128
+        Item: aegis_420198
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 129
+        Item: Faith_Of_Yggdrasil
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 130
+        Item: aegis_420235
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_garment
     Items:
       - Index: 0
@@ -1093,6 +1177,18 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 31
+        Item: aegis_480251
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 32
+        Item: Divine_Phoenix
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_armor
     Items:
       - Index: 0
@@ -1235,6 +1331,12 @@ Body:
             Amount: 10
       - Index: 23
         Item: lunar_eclipse_Armor_
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 24
+        Item: Fafnir_Scale_J
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2183,6 +2285,18 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 52
+        Item: aegis_490243
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 53
+        Item: Copy_Book_Concen
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_costume
     Items:
       - Index: 0
@@ -2745,6 +2859,24 @@ Body:
             Amount: 10
       - Index: 93
         Item: C_YinYang_Earring
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 94
+        Item: C_Mystical_Wing
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 95
+        Item: aegis_480318
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 96
+        Item: C_Squirrel_Ear_Hat
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
