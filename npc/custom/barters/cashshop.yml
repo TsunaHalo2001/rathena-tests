@@ -989,6 +989,114 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 131
+        Item: aegis_400481
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 132
+        Item: aegis_410210
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 133
+        Item: aegis_400506
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 134
+        Item: aegis_400505
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 135
+        Item: aegis_420223
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 136
+        Item: Guardian_Helm_
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 137
+        Item: Legacy_of_Wise_One_J
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 138
+        Item: Garden_Of_Eden
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 139
+        Item: Ear_OF_Spirit
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 140
+        Item: Einherial_Mantle
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 141
+        Item: aegis_400396
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 142
+        Item: Moroc_Slave_TW
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 143
+        Item: aegis_420182
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 144
+        Item: Ear_OF_Abyss
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 145
+        Item: Crown_Of_Saint_Jp
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 146
+        Item: Old_Moroc_Acc
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 147
+        Item: CharmOfAnywhere
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 148
+        Item: Wild_Beast
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_garment
     Items:
       - Index: 0
@@ -1189,6 +1297,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 33
+        Item: MD_Geffen_Cloth_JP
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_armor
     Items:
       - Index: 0
@@ -1337,6 +1451,48 @@ Body:
             Amount: 10
       - Index: 24
         Item: Fafnir_Scale_J
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 25
+        Item: aegis_450291
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 26
+        Item: EvilDragon_Armor
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 27
+        Item: aegis_450216
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 28
+        Item: aegis_450226
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 29
+        Item: aegis_450258
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 30
+        Item: aegis_450242
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 31
+        Item: Orc_Load_Mail_
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -1775,6 +1931,18 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 72
+        Item: Save_The_King
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 73
+        Item: Kings_Double_Edge_A
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_shield
     Items:
       - Index: 0
@@ -1815,6 +1983,18 @@ Body:
             Amount: 10
       - Index: 6
         Item: aegis_460052
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 7
+        Item: aegis_460050
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 8
+        Item: aegis_460057
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -1967,6 +2147,72 @@ Body:
             Amount: 10
       - Index: 24
         Item: Fifth_Element
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 25
+        Item: aaegis_470206
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 26
+        Item: Mamaragan
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 27
+        Item: Chaser_Shoes_
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 28
+        Item: Chic_Silent_Shoes
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 29
+        Item: Authority_Sandals
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 30
+        Item: Anony_Sm_Shoes
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 31
+        Item: aegis_470254
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 32
+        Item: Hollow_Shoes
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 33
+        Item: aegis_470274
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 34
+        Item: Shoes_Of_Judex_
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 35
+        Item: Space_shoes_JP
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2297,7 +2543,79 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-  - Name: cash_shop_costume
+      - Index: 54
+        Item: aegis_490396
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 55
+        Item: aegis_490381
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 56
+        Item: Ring_Of_The_Abyss_King
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 57
+        Item: Illegal_Tip
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 58
+        Item: aegis_490336
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 59
+        Item: aegis_490410
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 60
+        Item: Noblesse_oblige
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 61
+        Item: aegis_490427
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 62
+        Item: RingofVenus
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 63
+        Item: aegis_490471
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 64
+        Item: aegis_490428
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 65
+        Item: Palace_Ring
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+  - Name: cash_shop_shadow
     Items:
       - Index: 0
         Item: S_Booster_Armor
@@ -2438,445 +2756,459 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 23
-        Item: C_Reginleif_Hairband
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 24
-        Item: Little_Golden_Wing
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 25
-        Item: C_Master_Cat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 26
-        Item: C_Dullahan_Mask
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 27
-        Item: C_OneEyedJack
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 28
-        Item: C_Silk_Of_Soul
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 29
-        Item: C_Jakk
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 30
-        Item: C_Jjakk
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 31
-        Item: C_Midgarts_Glory
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 32
-        Item: C_White_Bird_Rose
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 33
-        Item: C_Pierced_Apple
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 34
-        Item: C_Slurp_Slurp_Hat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 35
-        Item: C_Memory_Of_Noodle
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 36
-        Item: C_Small_ocean
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 37
-        Item: C_Starfish_Headband
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 38
-        Item: C_Sailor_Hat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 39
-        Item: C_Forceps_Hairpin
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 40
-        Item: C_Iceflake_Hat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 41
-        Item: C_Gelato_Hat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 42
-        Item: C_Fan_Of_Summer
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 43
-        Item: C_Wing_Of_Spider
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 44
-        Item: C_L_Magestic_Goat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 45
-        Item: C_Vanilmirth_Hat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 46
-        Item: C_Lif_Doll_Hat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 47
-        Item: C_Amistr_Cap
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 48
-        Item: C_Filir_Hat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 49
-        Item: C_Neko_Mimi_Kafra
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 50
-        Item: C_Harvest_Festa_Hat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 51
         Item: S_Brand_Cube
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 30
-      - Index: 52
+      - Index: 24
         Item: S_Doram_Cube
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 80
-      - Index: 53
+      - Index: 25
         Item: S_Mechanic_Cube
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 60
-      - Index: 54
+      - Index: 26
         Item: S_Soul_Reaper_Cube
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 40
-      - Index: 55
-        Item: C_Jasper_Crest
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 56
-        Item: C_Black_Musang_Hat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 57
-        Item: C_Royalguard_Necklace
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 58
+      - Index: 27
         Item: S_Catnip_Weapon
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 59
+      - Index: 28
         Item: S_Catnip_Shield
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 60
+      - Index: 29
         Item: S_Catnip_Armor
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 61
+  - Name: cash_shop_costume
+    Items:
+      - Index: 0
+        Item: C_Reginleif_Hairband
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 1
+        Item: Little_Golden_Wing
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 2
+        Item: C_Master_Cat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 3
+        Item: C_Dullahan_Mask
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 4
+        Item: C_OneEyedJack
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 5
+        Item: C_Silk_Of_Soul
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 6
+        Item: C_Jakk
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 7
+        Item: C_Jjakk
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 8
+        Item: C_Midgarts_Glory
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 9
+        Item: C_White_Bird_Rose
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 10
+        Item: C_Pierced_Apple
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 11
+        Item: C_Slurp_Slurp_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 12
+        Item: C_Memory_Of_Noodle
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 13
+        Item: C_Small_ocean
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 14
+        Item: C_Starfish_Headband
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 15
+        Item: C_Sailor_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 16
+        Item: C_Forceps_Hairpin
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 17
+        Item: C_Iceflake_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 18
+        Item: C_Gelato_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 19
+        Item: C_Fan_Of_Summer
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 20
+        Item: C_Wing_Of_Spider
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 21
+        Item: C_L_Magestic_Goat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 22
+        Item: C_Vanilmirth_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 23
+        Item: C_Lif_Doll_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 24
+        Item: C_Amistr_Cap
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 25
+        Item: C_Filir_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 26
+        Item: C_Neko_Mimi_Kafra
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 27
+        Item: C_Harvest_Festa_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 28
+        Item: C_Jasper_Crest
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 29
+        Item: C_Black_Musang_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 30
+        Item: C_Royalguard_Necklace
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 31
         Item: C_Rune_Helm
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 62
+      - Index: 32
         Item: C_Rainbow_Star
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 63
+      - Index: 33
         Item: C_FlyingGalapago
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 64
+      - Index: 34
         Item: C_Wild_Poring_Rider
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 65
+      - Index: 35
         Item: C_Vassalage_Necklace
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 66
+      - Index: 36
         Item: C_Faceworm_Egg_Shell
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 67
+      - Index: 37
         Item: C_Royal_Mantle
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 68
+      - Index: 38
         Item: C_Luwmin_Ice
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 69
+      - Index: 39
         Item: C_Exa_Goat_Cap
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 70
+      - Index: 40
         Item: C_Man_Medal
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 71
+      - Index: 41
         Item: C_GodOfWinds_Fan
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 72
+      - Index: 42
         Item: C_Striking_Mikoshi
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 73
+      - Index: 43
         Item: C_Striking_hat
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 74
+      - Index: 44
         Item: C_Imperial_Glory
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 75
+      - Index: 45
         Item: C_QueenAnzRevenge
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 76
+      - Index: 46
         Item: C_Red_Baby_Dragon
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 77
+      - Index: 47
         Item: C_Northern_Cross
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 78
+      - Index: 48
         Item: C_Br_Twin_Ribbon
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 79
+      - Index: 49
         Item: C_LittleGarden
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 80
+      - Index: 50
         Item: C_Astro_Circle
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 81
+      - Index: 51
         Item: C_Thornbush_Hairband
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 82
+      - Index: 52
         Item: C_There_Is_Something_JP
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 83
+      - Index: 53
         Item: C_Red_Cherry_Blossom
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 84
+      - Index: 54
         Item: C_NostalgiaCherry
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 85
+      - Index: 55
         Item: C_Mob_Scarf
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 86
+      - Index: 56
         Item: C_Yellow_Scarf
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 87
+      - Index: 57
         Item: C_Black_Cat_Ears_Beret
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 88
+      - Index: 58
         Item: C_Lord_of_Royals
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 89
+      - Index: 59
         Item: C_Diving_Goggles
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 90
+      - Index: 60
         Item: C_Heavenly_Order
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 91
+      - Index: 61
         Item: aegis_410169
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 92
+      - Index: 62
         Item: C_YinYang_Earring_Y
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 93
+      - Index: 63
         Item: C_YinYang_Earring
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 94
+      - Index: 64
         Item: C_Mystical_Wing
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 95
+      - Index: 65
         Item: aegis_480318
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 96
+      - Index: 66
         Item: C_Squirrel_Ear_Hat
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 67
+        Item: C_Little_Abyss_Dragon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 68
+        Item: C_Morocc_Kid_Servant
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
