@@ -1290,7 +1290,7 @@ bool battle_status_block_damage(struct block_list *src, struct block_list *targe
 
 	// Weapon Blocking can be triggered while the above statuses are active.
 	if ((sce = sc->getSCE(SC_WEAPONBLOCKING)) && flag & (BF_SHORT | BF_WEAPON) && rnd() % 100 < sce->val2) {
-		clif_skill_nodamage(target, src, GC_WEAPONBLOCKING, sce->val1, 1);
+		clif_skill_nodamage(target, *src, GC_WEAPONBLOCKING, sce->val1);
 		sc_start(src, target, SC_WEAPONBLOCK_ON, 100, src->id, skill_get_time2(GC_WEAPONBLOCKING, sce->val1));
 		d->dmg_lv = ATK_BLOCK;
 		return false;
@@ -1407,12 +1407,12 @@ bool battle_status_block_damage(struct block_list *src, struct block_list *targe
 			(d_bl->type == BL_PC && ((TBL_PC*)d_bl)->devotion[sce_d->val2] == target->id)) &&
 			check_distance_bl(target, d_bl, sce_d->val3))
 		{ //If player is target of devotion, show guard effect on the devotion caster rather than the target
-			clif_skill_nodamage(d_bl, d_bl, CR_AUTOGUARD, sce->val1, 1);
+			clif_skill_nodamage(d_bl, *d_bl, CR_AUTOGUARD, sce->val1);
 			unit_set_walkdelay(d_bl, gettick(), delay, 1);
 			d->dmg_lv = ATK_MISS;
 			return false;
 		} else {
-			clif_skill_nodamage(target, target, CR_AUTOGUARD, sce->val1, 1);
+			clif_skill_nodamage(target, *target, CR_AUTOGUARD, sce->val1);
 			unit_set_walkdelay(target, gettick(), delay, 1);
 #ifdef RENEWAL
 			if (sc->getSCE(SC_SHRINK))
@@ -1455,7 +1455,7 @@ bool battle_status_block_damage(struct block_list *src, struct block_list *targe
 		return false;
 
 	if ((sce = sc->getSCE(SC_PARRYING)) && flag&BF_WEAPON && skill_id != WS_CARTTERMINATION && rnd() % 100 < sce->val2) {
-		clif_skill_nodamage(target, target, LK_PARRYING, sce->val1, 1);
+		clif_skill_nodamage(target, *target, LK_PARRYING, sce->val1);
 
 		if (skill_id == LK_PARRYING) {
 			unit_data *ud = unit_bl2ud(target);
@@ -1471,7 +1471,7 @@ bool battle_status_block_damage(struct block_list *src, struct block_list *targe
 
 		if (sd && pc_issit(sd))
 			pc_setstand(sd, true); //Stand it to dodge.
-		clif_skill_nodamage(target, target, TK_DODGE, 1, 1);
+		clif_skill_nodamage(target, *target, TK_DODGE, 1);
 		sc_start4(src, target, SC_COMBO, 100, TK_JUMPKICK, src->id, 1, 0, 2000);
 		return false;
 	}
@@ -3693,6 +3693,12 @@ static int battle_get_spiritball_damage(struct Damage& wd, struct block_list& sr
 			// These skills used as many spheres as they do hits
 			damage = (wd.div_ + sd->spiritball) * 3;
 			break;
+#ifdef RENEWAL
+		case MO_FINGEROFFENSIVE:
+			// These skills store the spheres used in spiritball_old
+			damage = (sd->spiritball_old + sd->spiritball) * 3;
+			break;
+#endif
 		case MO_EXTREMITYFIST:
 			// These skills store the number of spheres the player had before cast
 			damage = sd->spiritball_old * 3;
@@ -6803,9 +6809,9 @@ static void battle_calc_attack_plant(struct Damage* wd, struct block_list *src,s
 		return;
 	}
 
-	// Triple Attack has a special property that it does not split damage on plant mode
+	// Triple Attack and Finger Offensive have a special property, they do not split damage on plant mode
 	// In pre-renewal, it requires the monster to have exactly 100 def
-	if (skill_id == MO_TRIPLEATTACK && wd->div_ < 0
+	if ((skill_id == MO_TRIPLEATTACK || skill_id == MO_FINGEROFFENSIVE) && wd->div_ < 0
 #ifndef RENEWAL
 		&& tstatus->def == 100
 #endif
@@ -6990,7 +6996,7 @@ static void battle_calc_weapon_final_atk_modifiers(struct Damage* wd, struct blo
 		)
 	{
 		ATK_RATER(wd->damage, 50)
-		clif_skill_nodamage(target,target,ST_REJECTSWORD, tsc->getSCE(SC_REJECTSWORD)->val1,1);
+		clif_skill_nodamage(target, *target,ST_REJECTSWORD, tsc->getSCE(SC_REJECTSWORD)->val1);
 		battle_fix_damage(target,src,wd->damage,clif_damage(*target,*src,gettick(),0,0,wd->damage,0,DMG_NORMAL,0,false),ST_REJECTSWORD);
 		if (status_isdead(*target))
 			return;
@@ -7820,6 +7826,10 @@ struct Damage battle_calc_magic_attack(struct block_list *src,struct block_list 
 
 	if (!flag.infdef) { //No need to do the math for plants
 		unsigned int skillratio = 100; //Skill dmg modifiers.
+#ifdef RENEWAL
+		// Some skills do not use S.MATK and skillratio
+		bool has_skillratio = false;
+#endif
 		//Damage was set to 1 to simulate plant damage; if not plant, need to reinitialize damage with 0
 		ad.damage = 0;
 //MATK_RATE scales the damage. 100 = no change. 50 is halved, 200 is doubled, etc
@@ -8730,12 +8740,10 @@ struct Damage battle_calc_magic_attack(struct block_list *src,struct block_list 
 						skillratio += 25;
 				}
 #ifdef RENEWAL
-				// S.MATK needs to be applied before the skill ratio to prevent rounding issues
-				if (sd && sstatus->smatk > 0)
-					ad.damage += ad.damage * sstatus->smatk / 100;
-#endif
+				has_skillratio = true;
+#else
 				MATK_RATE(skillratio);
-
+#endif
 				//Constant/misc additions from skills
 				if (skill_id == WZ_FIREPILLAR)
 					MATK_ADD(100 + 50 * skill_lv);
@@ -8743,7 +8751,22 @@ struct Damage battle_calc_magic_attack(struct block_list *src,struct block_list 
 			}
 		}
 #ifdef RENEWAL
+		// Damage modifier need to be applied before SMATK
 		ad.damage += battle_calc_cardfix(BF_MAGIC, src, target, nk, s_ele, 0, ad.damage, 0, ad.flag);
+
+		// Additionnal damage from W_2HSTAFF
+		// Must be before smatk and after battle_calc_cardfix
+		if (sd != nullptr && sd->status.weapon == W_2HSTAFF && (i = pc_checkskill(sd, AG_TWOHANDSTAFF)) > 0) {
+			ad.damage += ad.damage * i / 100;
+		}
+
+		if (has_skillratio) {
+			// S.MATK needs to be applied before the skill ratio to prevent rounding issues
+			if (sd && sstatus->smatk > 0)
+				ad.damage += ad.damage * sstatus->smatk / 100;
+
+			MATK_RATE(skillratio);
+		}
 #endif
 
 		if(sd) {
@@ -9434,7 +9457,7 @@ struct Damage battle_calc_attack(int attack_type,struct block_list *bl,struct bl
 			status_change_entry *tsce = tsc->getSCE(SC_WEAPONBLOCKING);
 
 			if (attack_type == BF_WEAPON && rnd() % 100 < tsce->val2) {
-				clif_skill_nodamage(target, bl, GC_WEAPONBLOCKING, tsce->val1, 1);
+				clif_skill_nodamage(target, *bl, GC_WEAPONBLOCKING, tsce->val1);
 				sc_start(bl, target, SC_WEAPONBLOCK_ON, 100, bl->id, skill_get_time2(GC_WEAPONBLOCKING, tsce->val1));
 			}
 		}
@@ -9973,7 +9996,7 @@ enum damage_lv battle_weapon_attack(struct block_list* src, struct block_list* t
 	}
 
 	if (tsc && tsc->getSCE(SC_MTF_MLEATKED) && rnd()%100 < tsc->getSCE(SC_MTF_MLEATKED)->val2)
-		clif_skill_nodamage(target, target, SM_ENDURE, tsc->getSCE(SC_MTF_MLEATKED)->val1, sc_start(src, target, SC_ENDURE, 100, tsc->getSCE(SC_MTF_MLEATKED)->val1, skill_get_time(SM_ENDURE, tsc->getSCE(SC_MTF_MLEATKED)->val1)));
+		clif_skill_nodamage(target, *target, SM_ENDURE, tsc->getSCE(SC_MTF_MLEATKED)->val1, sc_start(src, target, SC_ENDURE, 100, tsc->getSCE(SC_MTF_MLEATKED)->val1, skill_get_time(SM_ENDURE, tsc->getSCE(SC_MTF_MLEATKED)->val1)));
 
 	if(tsc && tsc->getSCE(SC_KAAHI) && tstatus->hp < tstatus->max_hp && status_charge(target, 0, tsc->getSCE(SC_KAAHI)->val3)) {
 		int hp_heal = tstatus->max_hp - tstatus->hp;
