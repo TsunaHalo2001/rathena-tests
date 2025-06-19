@@ -4433,6 +4433,7 @@ Body:
   - Id: 11640
     AegisName: E_Deli_BBQ
     Name: Well Roasted Meat
+    Name: Well Roasted Meat
     Type: Healing
     Weight: 1
     EquipLevelMin: 70
