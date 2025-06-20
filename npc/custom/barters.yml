@@ -35,6 +35,7 @@
 #        Stock          Amount of item in stock. 0 means unlimited. (Default: 0)
 #        Zeny           Cost of them item in Zeny. (Default: 0)
 #        Refine         Refine level of the item. (Default: 0)
+#        Refine         Refine level of the item. (Default: 0)
 #        RequiredItems: List of required items (Optional)
 #          - Index      Index of the required item. (0-4)
 #            Item       Aegis name of required item.
@@ -44,6 +45,7 @@
 
 Header:
   Type: BARTER_DB
+  Version: 2
   Version: 2
 
 Footer:
