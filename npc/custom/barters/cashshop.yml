@@ -1,6 +1,6 @@
 Header:
   Type: BARTER_DB
-  Version: 1
+  Version: 2
 
 Body:
   - Name: cash_shop_mineral
@@ -415,12 +415,6 @@ Body:
             Amount: 10
       - Index: 35
         Item: Boitata_Hat
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 36
-        Item: Fletus_Tiara_SHC
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -911,24 +905,6 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 118
-        Item: aegis_400421
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 119
-        Item: aegis_400454
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 120
-        Item: aegis_400453
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
       - Index: 121
         Item: Demons_Familiar_
         RequiredItems:
@@ -941,80 +917,14 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 123
-        Item: aegis_400416
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
       - Index: 124
         Item: Squirrel_Ear_Hat
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 125
-        Item: aegis_400437
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 126
-        Item: aegis_400438
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 127
-        Item: aegis_400408
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 128
-        Item: aegis_420198
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
       - Index: 129
         Item: Faith_Of_Yggdrasil
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 130
-        Item: aegis_420235
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 131
-        Item: aegis_400481
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 132
-        Item: aegis_410210
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 133
-        Item: aegis_400506
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 134
-        Item: aegis_400505
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 135
-        Item: aegis_420223
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -1049,20 +959,8 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 141
-        Item: aegis_400396
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
       - Index: 142
         Item: Moroc_Slave_TW
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 143
-        Item: aegis_420182
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -1695,12 +1593,6 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 27
-        Item: aegis_450216
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
       - Index: 28
         Item: aegis_450226
         RequiredItems:
@@ -1721,12 +1613,6 @@ Body:
             Amount: 10
       - Index: 31
         Item: Orc_Load_Mail_
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 32
-        Item: aegis_450338
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2499,12 +2385,6 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 20
-        Item: aegis_470130
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
       - Index: 21
         Item: Flow_Shoes
         RequiredItems:
@@ -2969,12 +2849,6 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
-      - Index: 55
-        Item: aegis_490381
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
       - Index: 56
         Item: Ring_Of_The_Abyss_King
         RequiredItems:
@@ -3013,12 +2887,6 @@ Body:
             Amount: 10
       - Index: 62
         Item: RingofVenus
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 63
-        Item: aegis_490471
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -3683,12 +3551,6 @@ Body:
             Amount: 10
       - Index: 60
         Item: C_Heavenly_Order
-        RequiredItems:
-          - Index: 0
-            Item: Espantaviejas_ticket
-            Amount: 10
-      - Index: 61
-        Item: aegis_410169
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket

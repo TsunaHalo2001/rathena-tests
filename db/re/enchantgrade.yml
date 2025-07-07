@@ -96,7 +96,6 @@ Body:
                 Item: Etel_Skyblue_Jewel
                 Amount: 1
                 Zeny: 175000
-                BreakingRate: 0
               - Option: 1
                 Item: Etel_Skyblue_Jewel
                 Amount: 5
@@ -260,7 +259,6 @@ Body:
                 Item: Etel_Skyblue_Jewel
                 Amount: 1
                 Zeny: 175000
-                BreakingRate: 0
               - Option: 1
                 Item: Etel_Skyblue_Jewel
                 Amount: 5
