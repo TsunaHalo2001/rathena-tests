@@ -11826,15 +11826,6 @@ static const struct _battle_data {
 	{ "custom_cell_stack_limit",            &battle_config.custom_cell_stack_limit,         1,      1,      255,            },
 	{ "dancing_weaponswitch_fix",           &battle_config.dancing_weaponswitch_fix,        1,      0,      1,              },
 
-	// Keitenai Resistance Capping
-	{ "max_ele_def",                        &battle_config.max_ele_def,                     0,      0,      200,            },
-	{ "max_size_def",                       &battle_config.max_size_def,                    0,      0,      200,            },
-	{ "max_race2_def",                      &battle_config.max_race2_def,                   0,      0,      200,            },
-	{ "max_race_def",                       &battle_config.max_race_def,                    0,      0,      200,            },
-	{ "max_class_def",                      &battle_config.max_class_def,                   0,      0,      200,            },
-	{ "max_short_def",                      &battle_config.max_short_def,                   0,      0,      200,            },
-	{ "max_long_def",                       &battle_config.max_long_def,                    0,      0,      200,            },
-
 	// eAthena additions
 	{ "item_logarithmic_drops",             &battle_config.logarithmic_drops,               0,      0,      1,              },
 	{ "item_drop_common_min",               &battle_config.item_drop_common_min,            1,      0,      10000,          },

@@ -596,15 +596,6 @@ struct Battle_Config
 	int32 feature_mesitemicon;
 	int32 feature_mesitemicon_dbname;
 
-	// Keitenai Resistance Capping
-	int max_ele_def;
-	int max_size_def;
-	int max_race2_def;
-	int max_race_def;
-	int max_class_def;
-	int max_short_def;
-	int max_long_def;
-
 	// autotrade persistency
 	int32 feature_autotrade;
 	int32 feature_autotrade_direction;
