@@ -1,9 +1,11 @@
 prontera,154,177,5	script	Instance Reset	811,{
 	set .@ins_sara_time,checkquest(15002,PLAYTIME);
 	set .@ins_sara_time2,checkquest(15003,PLAYTIME);
-	if (.@ins_sara_time == 0 || .@ins_sara_time == 1) {
+	set .@ins_maze_time,checkquest(7211,PLAYTIME);
+	if (.@ins_sara_time == 0 || .@ins_sara_time == 1 || .@ins_maze_time == 0 || .@ins_maze_time == 1) {
 		erasequest 15002;
 		erasequest 15003;
+		erasequest 7211;
 	}
 	mes "Swoosh! Your Instances have been reset";
 	close;

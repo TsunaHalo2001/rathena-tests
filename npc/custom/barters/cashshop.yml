@@ -3170,23 +3170,41 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 40
       - Index: 27
-        Item: S_Catnip_Weapon
+        Item: S_Catnip_Cube
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
-            Amount: 10
+            Amount: 30
       - Index: 28
-        Item: S_Catnip_Shield
+        Item: S_RoyalGuard_Cube
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
-            Amount: 10
+            Amount: 60
       - Index: 29
-        Item: S_Catnip_Armor
+        Item: S_RuneKnight_Cube
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
-            Amount: 10
+            Amount: 60
+      - Index: 30
+        Item: S_Silvervine_Cube
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 30
+      - Index: 31
+        Item: S_Sonic_Cube
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 30
+      - Index: 32
+        Item: S_Ignition_Cube
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 30
   - Name: cash_shop_costume
     Items:
       - Index: 0
