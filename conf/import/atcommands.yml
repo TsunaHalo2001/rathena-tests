@@ -33,3 +33,6 @@ Header:
   Version: 1
 
 Body:
+  - Command: resist
+    Help: |
+      Displays the resistances of the player.
