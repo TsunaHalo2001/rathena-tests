@@ -34,8 +34,8 @@ Header:
   Version: 1
 
 Body:
-  - Start: 20240801
-    End: 20250801
+  - Start: 20250801
+    End: 20250901
     Rewards:
       - Day: 1
         ItemId: 22979
