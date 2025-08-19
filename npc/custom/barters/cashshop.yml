@@ -157,6 +157,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 11
+        Item: Food_Box_Lv1
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_equipment
     Items:
       - Index: 0
@@ -1145,6 +1151,18 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 174
+        Item: Purified_Pigeon_US
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 175
+        Item: Twinhead_DragonScale_US
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_garment
     Items:
       - Index: 0
@@ -1429,6 +1447,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 47
+        Item: Royal_Payon_US
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_armor
     Items:
       - Index: 0
@@ -1691,6 +1715,12 @@ Body:
             Amount: 10
       - Index: 45
         Item: Shepherd_Cloth
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 46
+        Item: Twinhead_dragon_Mail_J
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2173,6 +2203,12 @@ Body:
             Amount: 10
       - Index: 79
         Item: Valkyrie_Hammer
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 80
+        Item: Tomb_Club_US
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -3005,6 +3041,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 83
+        Item: Dragon_Ring_US
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_shadow
     Items:
       - Index: 0
@@ -3201,6 +3243,18 @@ Body:
             Amount: 30
       - Index: 32
         Item: S_Ignition_Cube
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 30
+      - Index: 33
+        Item: S_W_Breath_Cube
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 30
+      - Index: 34
+        Item: S_F_Breath_Cube
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
