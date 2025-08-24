@@ -89,6 +89,9 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 14
+        Item: Ethernium
+        Zeny: 100000
   - Name: cash_shop_pack
     Items:
       - Index: 0
