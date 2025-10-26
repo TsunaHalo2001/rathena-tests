@@ -1624,7 +1624,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 28
-        Item: aegis_450226
+        Item: Four_of_a_kind
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2270,7 +2270,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 8
-        Item: aegis_460057
+        Item: Spenta_Armaiti
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2488,7 +2488,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 31
-        Item: aegis_470254
+        Item: KenZen_Ichinyo
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2886,7 +2886,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 54
-        Item: aegis_490396
+        Item: Establish
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
