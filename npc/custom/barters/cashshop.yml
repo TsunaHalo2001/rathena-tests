@@ -1636,7 +1636,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 30
-        Item: aegis_450242
+        Item: Elemental_Possession
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -1648,7 +1648,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 33
-        Item: aegis_450247
+        Item: Brilliant
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2910,7 +2910,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 59
-        Item: Into_The_Abysss
+        Item: Into_The_Abyss
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2922,7 +2922,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 61
-        Item: aegis_490427
+        Item: Ring_Of_Storm
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2934,7 +2934,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 64
-        Item: aegis_490428
+        Item: Chemical_R_Glove
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2946,7 +2946,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 66
-        Item: aegis_490453
+        Item: Elemental_Jewel
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -3048,7 +3048,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 83
-        Item: aegis_490413
+        Item: Twin_Dragon_Ring_TH
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
