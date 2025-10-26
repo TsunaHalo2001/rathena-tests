@@ -1630,7 +1630,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 29
-        Item: aegis_450258
+        Item: Loud_Park
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2500,7 +2500,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 33
-        Item: aegis_470274
+        Item: Twinhead_dragon_Boots
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2904,13 +2904,13 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 58
-        Item: aegis_490336
+        Item: Dimension_L_Stone
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 59
-        Item: aegis_490410
+        Item: Into_The_Abysss
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
