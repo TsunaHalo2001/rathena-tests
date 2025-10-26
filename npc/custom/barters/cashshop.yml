@@ -1358,7 +1358,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 31
-        Item: aegis_480251
+        Item: Mystical_Wing
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -1588,7 +1588,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 21
-        Item: aegis_450215
+        Item: Aramazd_revelation
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2160,7 +2160,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 70
-        Item: aegis_700069
+        Item: Triangle_Disaster
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2258,7 +2258,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 6
-        Item: aegis_460052
+        Item: Striking_Armguard
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2350,7 +2350,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 7
-        Item: aegis_470247
+        Item: Mid_Knight_Shoes
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2862,7 +2862,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 50
-        Item: aegis_490319
+        Item: YSF01_Ring
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -3652,7 +3652,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 65
-        Item: aegis_480318
+        Item: C_Divine_Phoenix
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
