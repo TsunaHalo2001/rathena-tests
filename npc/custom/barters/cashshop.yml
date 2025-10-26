@@ -1163,6 +1163,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 176
+        Item: Divine_Guard_Hat_
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_garment
     Items:
       - Index: 0
@@ -1721,6 +1727,12 @@ Body:
             Amount: 10
       - Index: 46
         Item: Twinhead_dragon_Mail_J
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 47
+        Item: Themis_Balance
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
