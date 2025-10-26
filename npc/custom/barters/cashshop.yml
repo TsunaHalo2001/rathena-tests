@@ -1612,7 +1612,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 25
-        Item: aegis_450291
+        Item: Amazing_Grace
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2264,7 +2264,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 7
-        Item: aegis_460050
+        Item: Symbol_Of_Eden
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2452,7 +2452,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 25
-        Item: aaegis_470206
+        Item: Prana_Boots
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
@@ -2874,7 +2874,7 @@ Body:
             Item: Espantaviejas_ticket
             Amount: 10
       - Index: 52
-        Item: aegis_490243
+        Item: Ring_of_SilverClaw
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
