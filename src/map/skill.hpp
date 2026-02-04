@@ -28,6 +28,12 @@ struct status_change_entry;
 class status_change;
 class SkillImpl;
 
+extern DBMap* bowling_db;
+
+#ifndef TIMERSKILL_INTERVAL
+	#define TIMERSKILL_INTERVAL	150
+#endif
+
 #define MAX_SKILL_PRODUCE_DB	300 /// Max Produce DB
 #define MAX_PRODUCE_RESOURCE	12 /// Max Produce requirements
 #define MAX_SKILL_LEVEL 13 /// Max Skill Level (for skill_db storage)
@@ -118,6 +124,7 @@ enum e_skill_inf2 : uint8 {
 	INF2_SHOWSCALE, // Skill shows AoE area while casting
 	INF2_IGNOREGTB, // Skill ignores effect of GTB
 	INF2_TOGGLEABLE, // Skill can be toggled on and off (won't consume HP/SP when toggled off)
+	INF2_IGNORENONCRITATKBONUS, // Skill ignores the bonus of bNonCritAtkRate
 	INF2_MAX,
 };
 
@@ -505,6 +512,8 @@ e_cast_type skill_get_casttype(uint16 skill_id); //[Skotlex]
 const char*	skill_get_name( uint16 skill_id ); 	// [Skotlex]
 const char*	skill_get_desc( uint16 skill_id ); 	// [Skotlex]
 int32 skill_tree_get_max( uint16 skill_id, int32 b_class );	// Celest
+int32 skill_greed(block_list* bl, va_list ap);
+int32 skill_cell_overlap(block_list* bl, va_list ap);
 
 // Accessor to the skills database
 #define skill_get_index(skill_id) skill_db.get_index((skill_id), false, __FUNCTION__, __FILE__, __LINE__) /// Get skill index from skill_id (common usage on source)
@@ -514,7 +523,7 @@ int32 skill_get_inf( uint16 skill_id );
 int32 skill_get_ele( uint16 skill_id , uint16 skill_lv );
 int32 skill_get_max( uint16 skill_id );
 int32 skill_get_range( uint16 skill_id , uint16 skill_lv );
-int32 skill_get_range2(block_list *bl, uint16 skill_id, uint16 skill_lv, bool isServer);
+int32 skill_get_range2(const block_list* bl, uint16 skill_id, uint16 skill_lv, bool isServer);
 int32 skill_get_splash( uint16 skill_id , uint16 skill_lv );
 int32 skill_get_num( uint16 skill_id ,uint16 skill_lv );
 int32 skill_get_cast( uint16 skill_id ,uint16 skill_lv );
@@ -527,6 +536,7 @@ int32 skill_get_castdef( uint16 skill_id );
 int32 skill_get_nocast( uint16 skill_id );
 int32 skill_get_unit_id( uint16 skill_id );
 int32 skill_get_unit_id2( uint16 skill_id );
+int32 skill_get_unit_interval( uint16 skill_id );
 int32 skill_get_castcancel( uint16 skill_id );
 int32 skill_get_maxcount( uint16 skill_id ,uint16 skill_lv );
 int32 skill_get_blewcount( uint16 skill_id ,uint16 skill_lv );
@@ -556,6 +566,8 @@ int32 skill_get_state(uint16 skill_id);
 size_t skill_get_status_count( uint16 skill_id );
 int32 skill_get_spiritball( uint16 skill_id, uint16 skill_lv );
 uint16 skill_dummy2skill_id(uint16 skill_id);
+
+int32 splash_target(block_list* bl);
 
 uint16 skill_name2id(const char* name);
 
@@ -609,11 +621,13 @@ void skill_consume_requirement(map_session_data *sd, uint16 skill_id, uint16 ski
 struct s_skill_condition skill_get_requirement(map_session_data *sd, uint16 skill_id, uint16 skill_lv);
 bool skill_disable_check(status_change &sc, uint16 skill_id);
 bool skill_pos_maxcount_check(block_list *src, int16 x, int16 y, uint16 skill_id, uint16 skill_lv, enum bl_type type, bool display_failure);
+bool skill_strip_equip(block_list *src, block_list *target, uint16 skill_id, uint16 skill_lv);
 
 int32 skill_check_pc_partner(map_session_data *sd, uint16 skill_id, uint16 *skill_lv, int32 range, int32 cast_flag);
 int32 skill_unit_move(block_list *bl,t_tick tick,int32 flag);
 void skill_unit_move_unit_group( std::shared_ptr<s_skill_unit_group> group, int16 m,int16 dx,int16 dy);
 void skill_unit_move_unit(block_list *bl, int32 dx, int32 dy);
+bool skill_check_unit_movepos(uint8 check_flag, block_list *bl, int16 dst_x, int16 dst_y, int32 easy, bool checkpath);
 
 int32 skill_sit(map_session_data *sd, bool sitting);
 void skill_repairweapon( map_session_data& sd, int32 idx );
@@ -625,6 +639,8 @@ int32 skill_calc_heal(block_list *src, block_list *target, uint16 skill_id, uint
 
 bool skill_check_cloaking(block_list *bl, struct status_change_entry *sce);
 int8 skill_isCopyable(map_session_data *sd, uint16 skill_id);
+
+int32 skill_graffitiremover(block_list *bl, va_list ap); // [Valaris]
 
 // Abnormal status
 bool skill_isNotOk( uint16 skill_id, map_session_data& sd );
@@ -644,6 +660,7 @@ int32 skill_castend_nodamage_id( block_list *src, block_list *bl,uint16 skill_id
 int32 skill_castend_damage_id( block_list* src, block_list *bl,uint16 skill_id,uint16 skill_lv,t_tick tick,int32 flag );
 int32 skill_castend_pos2( block_list *src, int32 x,int32 y,uint16 skill_id,uint16 skill_lv,t_tick tick,int32 flag);
 int32 skill_area_sub(block_list *bl, va_list ap);
+int32 skill_area_sub_count(block_list* src, block_list* target, uint16 skill_id, uint16 skill_lv, t_tick tick, int32 flag);
 extern int32 skill_area_temp[8];
 
 bool skill_blockpc_start(map_session_data &sd, uint16 skill_id, t_tick tick);
@@ -663,6 +680,7 @@ TIMER_FUNC(skill_blockmerc_end);
 
 // Skill action, (return dmg,heal)
 int64 skill_attack( int32 attack_type, block_list* src, block_list *dsrc,block_list *bl,uint16 skill_id,uint16 skill_lv,t_tick tick,int32 flag );
+int32 skill_attack_area(struct block_list *bl,va_list ap);
 
 void skill_reload(void);
 
@@ -2818,7 +2836,7 @@ extern ReadingSpellbookDatabase reading_spellbook_db;
 
 void skill_spellbook(map_session_data &sd, t_itemid nameid);
 
-int32 skill_block_check(block_list *bl, enum sc_type type, uint16 skill_id);
+int32 skill_block_check(const block_list* bl, enum sc_type type, uint16 skill_id);
 
 struct s_skill_magicmushroom_db {
 	uint16 skill_id;
