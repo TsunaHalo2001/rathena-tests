@@ -1737,6 +1737,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 48
+        Item: Royal_H_Mail_B
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_weapon
     Items:
       - Index: 0
@@ -3261,6 +3267,12 @@ Body:
             Amount: 30
       - Index: 34
         Item: S_F_Breath_Cube
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 30
+      - Index: 35
+        Item: S_Genesis_Cube
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
