@@ -80,7 +80,7 @@ prontera,146,173,6	script	Cash Shop	998,{
         close2;
         callshop "cash_shop_card";
         end;
-    case 15:
+    case 16:
         mes "[Cash Shop]";
         mes "Come back anytime";
         close;
