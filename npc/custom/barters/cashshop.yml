@@ -3865,3 +3865,11 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 1
+  - Name: cash_shop_card
+    Items:
+      - Index: 0
+        Item: Beta_Scissore_Ng_Card
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 1
