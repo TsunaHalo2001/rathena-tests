@@ -137,12 +137,12 @@ OnClock2230:
 	.start = 2;
 	.round = 1;
 	.mob = 75;
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] SOLDIER SKELETON",1028,10,strnpcinfo(0)+"::OnDevilDead";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] ORC ARCHER",1189,15,strnpcinfo(0)+"::OnDevilDead";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] SANDMAN",1165,10,strnpcinfo(0)+"::OnDevilDead";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] ARCHER SKELETON",1016,15,strnpcinfo(0)+"::OnDevilDead";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] MINOROUS",1149,15,strnpcinfo(0)+"::OnDevilDead";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] REQUIEM",1164,10,strnpcinfo(0)+"::OnDevilDead";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] King Poring",3810,10,strnpcinfo(0)+"::OnDevilDead";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Orc Hero",1087,15,strnpcinfo(0)+"::OnDevilDead";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Maya",1147,10,strnpcinfo(0)+"::OnDevilDead";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Orc Lord",1190,15,strnpcinfo(0)+"::OnDevilDead";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Eddga",1115,15,strnpcinfo(0)+"::OnDevilDead";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Golden Thief Bug",1086,10,strnpcinfo(0)+"::OnDevilDead";
 	end;
 
 OnDevilDead:
