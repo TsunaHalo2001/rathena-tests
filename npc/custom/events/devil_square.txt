@@ -158,12 +158,12 @@ OnDevilDead:
 OnDevil2:
 	.round = 2;
 	.mob = 70;
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] GARGOYLE",1253,15,strnpcinfo(0)+"::OnDevilDead2";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] ALARM",1193,10,strnpcinfo(0)+"::OnDevilDead2";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] HIGH ORC",1213,10,strnpcinfo(0)+"::OnDevilDead2";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] INJUSTICE",1257,10,strnpcinfo(0)+"::OnDevilDead2";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] MIMIC",1191,15,strnpcinfo(0)+"::OnDevilDead2";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] WRAITH",1192,10,strnpcinfo(0)+"::OnDevilDead2";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Osiris",1038,15,strnpcinfo(0)+"::OnDevilDead2";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Amon Ra",1511,10,strnpcinfo(0)+"::OnDevilDead2";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Phreeoni",1159,10,strnpcinfo(0)+"::OnDevilDead2";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Dracula",1389,10,strnpcinfo(0)+"::OnDevilDead2";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Doppelganger",1046,15,strnpcinfo(0)+"::OnDevilDead2";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Mistress",1059,10,strnpcinfo(0)+"::OnDevilDead2";
 	end;
 
 OnDevilDead2:
