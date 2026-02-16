@@ -179,12 +179,12 @@ OnDevilDead2:
 OnDevil3:
 	.round = 3;
 	.mob = 58;
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] ANOLIAN",1206,15,strnpcinfo(0)+"::OnDevilDead3";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] WANDERER",1208,15,strnpcinfo(0)+"::OnDevilDead3";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] DEVIRUCHI",1109,10,strnpcinfo(0)+"::OnDevilDead3";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] JOKER",1131,15,strnpcinfo(0)+"::OnDevilDead3";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] MOONLIGHT",1150,2,strnpcinfo(0)+"::OnDevilDead3";
-	areamonster "ordeal_1-1",183,182,246,244,"[DS] DARK ILLUSION",1302,1,strnpcinfo(0)+"::OnDevilDead3";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Moonlight Flower",1150,15,strnpcinfo(0)+"::OnDevilDead3";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Lady Tanee",1688,15,strnpcinfo(0)+"::OnDevilDead3";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Baphomet",1039,10,strnpcinfo(0)+"::OnDevilDead3";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Pharaoh",1157,15,strnpcinfo(0)+"::OnDevilDead3";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Entweihen Crothen",1957,2,strnpcinfo(0)+"::OnDevilDead3";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Drake",1112,1,strnpcinfo(0)+"::OnDevilDead3";
 	end;
 
 OnDevilDead3:
