@@ -3349,6 +3349,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 30
+      - Index: 36
+        Item: S_Banish_Cannon_Cube
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 30
   - Name: cash_shop_costume
     Items:
       - Index: 0

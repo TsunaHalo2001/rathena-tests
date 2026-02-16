@@ -15667,6 +15667,8 @@ Body:
         Rate: 400
       - Item: Old_Card_Album
         Rate: 500
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1325
     AegisName: TREASURE_BOX2
@@ -15706,6 +15708,8 @@ Body:
         Rate: 250
       - Item: Sg_Weapon_Supply_Box
         Rate: 5
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1326
     AegisName: TREASURE_BOX3
@@ -15745,6 +15749,8 @@ Body:
         Rate: 400
       - Item: Old_Card_Album
         Rate: 500
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1327
     AegisName: TREASURE_BOX4
@@ -15784,6 +15790,8 @@ Body:
         Rate: 250
       - Item: Sg_Weapon_Supply_Box
         Rate: 5
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1328
     AegisName: TREASURE_BOX5
@@ -15823,6 +15831,8 @@ Body:
         Rate: 400
       - Item: Old_Card_Album
         Rate: 500
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1329
     AegisName: TREASURE_BOX6
@@ -15862,6 +15872,8 @@ Body:
         Rate: 250
       - Item: Sg_Weapon_Supply_Box
         Rate: 5
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1330
     AegisName: TREASURE_BOX7
@@ -15901,6 +15913,8 @@ Body:
         Rate: 400
       - Item: Old_Card_Album
         Rate: 500
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1331
     AegisName: TREASURE_BOX8
@@ -15940,6 +15954,8 @@ Body:
         Rate: 250
       - Item: Sg_Weapon_Supply_Box
         Rate: 5
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1332
     AegisName: TREASURE_BOX9
@@ -15979,6 +15995,8 @@ Body:
         Rate: 400
       - Item: Old_Card_Album
         Rate: 500
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1333
     AegisName: TREASURE_BOX10
@@ -16018,6 +16036,8 @@ Body:
         Rate: 250
       - Item: Sg_Weapon_Supply_Box
         Rate: 5
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1334
     AegisName: TREASURE_BOX11
@@ -16057,6 +16077,8 @@ Body:
         Rate: 400
       - Item: Old_Card_Album
         Rate: 500
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1335
     AegisName: TREASURE_BOX12
@@ -16096,6 +16118,8 @@ Body:
         Rate: 250
       - Item: Sg_Weapon_Supply_Box
         Rate: 5
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1336
     AegisName: TREASURE_BOX13
@@ -16135,6 +16159,8 @@ Body:
         Rate: 400
       - Item: Old_Card_Album
         Rate: 500
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1337
     AegisName: TREASURE_BOX14
@@ -16174,6 +16200,8 @@ Body:
         Rate: 250
       - Item: Sg_Weapon_Supply_Box
         Rate: 5
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1338
     AegisName: TREASURE_BOX15
@@ -16213,6 +16241,8 @@ Body:
         Rate: 400
       - Item: Old_Card_Album
         Rate: 500
+      - Item: Espantaviejas_ticket
+        Rate: 100000
         StealProtected: true
   - Id: 1339
     AegisName: TREASURE_BOX16

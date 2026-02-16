@@ -125,6 +125,14 @@ Body:
     Sell: 1000
     Weight: 0
 
+#Billion Zeny Coin
+  - Id: 1001901
+    AegisName: 1b_Coin_US
+    Name: Billion Zeny Coin
+    Type: Etc
+    Sell: 999999999
+    Weight: 0
+
 #Body:
 # THQ Quest Items
 #=============================================================

@@ -1,4 +1,0 @@
-function	script	F_Kachua_Key	{
-	getitem 23914, 1;
-	end;
-}

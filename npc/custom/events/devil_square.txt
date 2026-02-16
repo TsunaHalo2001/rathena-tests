@@ -189,6 +189,7 @@ OnDevilDead3:
 OnDevil4:
 	.round = 4;
 	.mob = 10;
+	getitem 1001901, 1; // Give the billion zeny coin
 	monster "ordeal_1-1",231,250,"Treasure Chest",1324,1,strnpcinfo(0)+"::OnTreasureDead";
 	monster "ordeal_1-1",234,247,"Treasure Chest",1328,1,strnpcinfo(0)+"::OnTreasureDead";
 	monster "ordeal_1-1",237,244,"Treasure Chest",1332,1,strnpcinfo(0)+"::OnTreasureDead";
