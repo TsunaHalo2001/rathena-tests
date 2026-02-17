@@ -163,6 +163,9 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 12
+        Item: Shadow_Random_Mix
+        Zeny: 100000
   - Name: cash_shop_equipment
     Items:
       - Index: 0
