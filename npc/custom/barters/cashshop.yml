@@ -156,16 +156,22 @@ Body:
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
-            Amount: 10
+            Amount: 1
       - Index: 11
         Item: Food_Box_Lv1
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
-            Amount: 10
+            Amount: 1
       - Index: 12
         Item: Shadow_Random_Mix
         Zeny: 100000
+      - Index: 13
+        Item: Kr_B_Special01
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 1
   - Name: cash_shop_equipment
     Items:
       - Index: 0
