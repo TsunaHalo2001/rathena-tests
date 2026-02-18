@@ -190,15 +190,141 @@ OnDevil3:
 OnDevilDead3:
 	.mob--;
 	if ( .mob == 25 || .mob == 5 )
-		announce "Devil Square : "+ .mob +" monsters remaining in the final round.", bc_map;
+		announce "Devil Square : "+ .mob +" monsters remaining in round 1.", bc_map;
 	else if ( .mob <= 0 ) {
-		announce "Devil Square : CONGRATULATIONS. These 10 Treasure Chests are yours.", bc_map;
+		announce "Devil Square is entering round 2...", bc_map;
 		goto OnDevil4;
 	}
 	end;
 
 OnDevil4:
 	.round = 4;
+	.mob = 70;
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Knight of Windstorm",1251,15,strnpcinfo(0)+"::OnDevilDead4";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Boitata",2068,10,strnpcinfo(0)+"::OnDevilDead4";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Leak",2156,10,strnpcinfo(0)+"::OnDevilDead4";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Lord of Death",1373,10,strnpcinfo(0)+"::OnDevilDead4";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Giant Octopus",2194,15,strnpcinfo(0)+"::OnDevilDead4";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Dark Lord",1272,10,strnpcinfo(0)+"::OnDevilDead4";
+	end;
+
+OnDevilDead4:
+	.mob--;
+	if ( .mob == 25 || .mob == 5 )
+		announce "Devil Square : "+ .mob +" monsters remaining in round 4.", bc_map;
+	else if ( .mob <= 0 ) {
+		announce "Devil Square is entering round 5...", bc_map;
+		goto OnDevil5;
+	}
+	end;
+
+OnDevil5:
+	.round = 5;
+	.mob = 58;
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Gopinich",1885,15,strnpcinfo(0)+"::OnDevilDead5";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Bacsojin",1630,15,strnpcinfo(0)+"::OnDevilDead5";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Ktullanux",1779,10,strnpcinfo(0)+"::OnDevilDead5";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Garm",1252,15,strnpcinfo(0)+"::OnDevilDead5";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] The Last One",2441,2,strnpcinfo(0)+"::OnDevilDead5";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Naght Sieger",1956,1,strnpcinfo(0)+"::OnDevilDead5";
+	end;
+
+OnDevilDead5:
+	.mob--;
+	if ( .mob == 25 || .mob == 5 )
+		announce "Devil Square : "+ .mob +" monsters remaining in round 5.", bc_map;
+	else if ( .mob <= 0 ) {
+		announce "Devil Square is entering round 6...", bc_map;
+		goto OnDevil6;
+	}
+	end;
+
+OnDevil6:
+	.round = 6;
+	.mob = 70;
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] King of the Alley",2442,15,strnpcinfo(0)+"::OnDevilDead6";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Thanatos Phantom",1708,10,strnpcinfo(0)+"::OnDevilDead6";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Incantation Samurai",1492,10,strnpcinfo(0)+"::OnDevilDead6";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Grotesque Coelacanth",2188,10,strnpcinfo(0)+"::OnDevilDead6";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] RSX 0806",1623,15,strnpcinfo(0)+"::OnDevilDead6";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Lich Lord",3658,10,strnpcinfo(0)+"::OnDevilDead6";
+	end;
+
+OnDevilDead6:
+	.mob--;
+	if ( .mob == 25 || .mob == 5 )
+		announce "Devil Square : "+ .mob +" monsters remaining in round 6.", bc_map;
+	else if ( .mob <= 0 ) {
+		announce "Devil Square is entering round 7...", bc_map;
+		goto OnDevil7;
+	}
+	end;
+
+OnDevil7:
+	.round = 7;
+	.mob = 58;
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Evil Snake Lord",1418,15,strnpcinfo(0)+"::OnDevilDead7";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Tao Gunka",1583,15,strnpcinfo(0)+"::OnDevilDead7";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Venomous Chimera",3633,10,strnpcinfo(0)+"::OnDevilDead7";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Turtle General",1312,15,strnpcinfo(0)+"::OnDevilDead7";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Atroce",1785,2,strnpcinfo(0)+"::OnDevilDead7";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Nidhoggr's Shadow",2022,1,strnpcinfo(0)+"::OnDevilDead7";
+	end;
+
+OnDevilDead7:
+	.mob--;
+	if ( .mob == 25 || .mob == 5 )
+		announce "Devil Square : "+ .mob +" monsters remaining in round 7.", bc_map;
+	else if ( .mob <= 0 ) {
+		announce "Devil Square is entering round 8...", bc_map;
+		goto OnDevil8;
+	}
+	end;
+
+OnDevil8:
+	.round = 8;
+	.mob = 70;
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Kraken",2202,15,strnpcinfo(0)+"::OnDevilDead8";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Kiel D-01",1734,10,strnpcinfo(0)+"::OnDevilDead8";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Vesper",1685,10,strnpcinfo(0)+"::OnDevilDead8";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Detale",1719,10,strnpcinfo(0)+"::OnDevilDead8";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Fallen Bishop",1871,15,strnpcinfo(0)+"::OnDevilDead8";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Pitaya Boss",20659,10,strnpcinfo(0)+"::OnDevilDead8";
+	end;
+
+OnDevilDead8:
+	.mob--;
+	if ( .mob == 25 || .mob == 5 )
+		announce "Devil Square : "+ .mob +" monsters remaining in round 8.", bc_map;
+	else if ( .mob <= 0 ) {
+		announce "Devil Square is entering round 9...", bc_map;
+		goto OnDevil9;
+	}
+	end;
+
+OnDevil9:
+	.round = 9;
+	.mob = 58;
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Gloom Under Night",1768,15,strnpcinfo(0)+"::OnDevilDead9";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Gold Queen Scaraba",2165,15,strnpcinfo(0)+"::OnDevilDead9";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Valkyrie Randgris",1751,10,strnpcinfo(0)+"::OnDevilDead9";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Ygnizem",1658,15,strnpcinfo(0)+"::OnDevilDead9";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Pyuriel",2249,2,strnpcinfo(0)+"::OnDevilDead9";
+	areamonster "ordeal_1-1",183,182,246,244,"[DS] Daehyon",2253,1,strnpcinfo(0)+"::OnDevilDead9";
+	end;
+
+OnDevilDead9:
+	.mob--;
+	if ( .mob == 25 || .mob == 5 )
+		announce "Devil Square : "+ .mob +" monsters remaining in the final round.", bc_map;
+	else if ( .mob <= 0 ) {
+		announce "Devil Square : CONGRATULATIONS. These 10 Treasure Chests are yours.", bc_map;
+		goto OnDevil10;
+	}
+	end;
+
+OnDevil10:
+	.round = 10;
 	.mob = 10;
 	getitem 1001901, 1; // Give the billion zeny coin
 	monster "ordeal_1-1",231,250,"Treasure Chest",1324,1,strnpcinfo(0)+"::OnTreasureDead";
