@@ -2386,6 +2386,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 14
+        Item: Guardian_Shield_TH
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_shoes
     Items:
       - Index: 0

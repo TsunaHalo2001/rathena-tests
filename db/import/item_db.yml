@@ -133,6 +133,44 @@ Body:
     Sell: 999999999
     Weight: 0
 
+#Non existant in DB but added in Divine Pride
+  - Id: 460081
+    AegisName: Guardian_Shield_TH
+    Name: Guardian's Shield
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 250
+    Slots: 4
+    Jobs:
+      Crusader: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Locations:
+      Left_Hand: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    View: 1
+    Script: |
+      .@r = getrefine();
+      bonus bUnbreakableArmor;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus2 bSkillAtk,"LG_CANNONSPEAR",30;
+      bonus bAtk,.@r/2*10;
+      if (.@r >= 7) {
+        autobonus "{ bonus bAtk, 90; }", 1000, 90000;
+      }
+      if (.@r >= 9) {
+        bonus bLongAtkRate, 10;
+        bonus bDelayrate, -5;
+      };
+      if (.@r >= 11) {
+        bonus2 bSkillCooldown,"LG_CANNONSPEAR",-1000;
+      }
+
 #Body:
 # THQ Quest Items
 #=============================================================
