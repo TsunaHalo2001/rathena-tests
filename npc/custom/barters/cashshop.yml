@@ -4038,3 +4038,9 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 5
+      - Index: 5
+        Item: aegis_300557
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 5
