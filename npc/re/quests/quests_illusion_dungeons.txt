@@ -8718,8 +8718,8 @@ S_MenuHunt:
 //============================================================
 //= Illusion of Underwater
 //============================================================
-// prt_in,157,66,4	script	Jerrymon#jerry	1_M_01,{
-prt_elib,57,18,4	script	Jerrymon#jerry	1_M_01,{
+ prt_in,157,66,4	script	Jerrymon#jerry	1_M_01,{
+//prt_elib,57,18,4	script	Jerrymon#jerry	1_M_01,{
 	if (ill_underwater == 0) {
 		mes "[Jerrymon]";
 		mes "Um... Uhm...";
@@ -11830,7 +11830,7 @@ einbroch,149,242,5	script	Coughing young man#ITB	4_M_NFMAN,3,3,{
 		mes "Why haven't you come back yet...";
 		mes "Cough Cough!!";
 		next;
-		mes "^ff0000¡Ø You can start this quest from level 150.^000000";
+		mes "^ff0000ï¿½ï¿½ You can start this quest from level 150.^000000";
 		close;
 	}
 	if (ill_teddy == 0) {
