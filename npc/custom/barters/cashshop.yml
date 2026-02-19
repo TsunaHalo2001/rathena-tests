@@ -4013,10 +4013,28 @@ Body:
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
-            Amount: 1
+            Amount: 5
       - Index: 1
         Item: aegis_300602
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
-            Amount: 1
+            Amount: 5
+      - Index: 2
+        Item: Yordos_Inve_Card
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 5
+      - Index: 3
+        Item: Yortus_Conjur_Card
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 5
+      - Index: 4
+        Item: Yordos_Judge_Card
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 5
