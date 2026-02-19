@@ -1178,6 +1178,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 177
+        Item: GoodnEvil_Circlet_SH
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_garment
     Items:
       - Index: 0
@@ -2308,6 +2314,12 @@ Body:
             Amount: 10
       - Index: 91
         Item: Light_Blade_LT
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 92
+        Item: Darkness_Foxtail_Model
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
