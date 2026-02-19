@@ -3382,6 +3382,42 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 30
+      - Index: 37
+        Item: S_SH_Shoes
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 38
+        Item: S_SH_Armor
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 39
+        Item: S_SH_Pendant
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 40
+        Item: S_SH_Earring
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 41
+        Item: S_Master_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
+      - Index: 42
+        Item: S_Master_Shield
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_costume
     Items:
       - Index: 0
@@ -3974,6 +4010,12 @@ Body:
     Items:
       - Index: 0
         Item: Beta_Scissore_Ng_Card
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 1
+      - Index: 1
+        Item: aegis_300602
         RequiredItems:
           - Index: 0
             Item: Espantaviejas_ticket
