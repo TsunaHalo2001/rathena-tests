@@ -23,7 +23,7 @@
 *-----------------------------------------*/
 ACMD_FUNC(resist) {
 	char output[CHAT_SIZE_MAX];
-	int i;
+	int i, j;
 	struct {
 		const char* format;
 		int value;
@@ -47,7 +47,7 @@ ACMD_FUNC(resist) {
 	for (j = 0; j <= 10; j++) {
 		output_table[j].value = (sd->indexed_bonus.subele[j] + sd->indexed_bonus.subele_script[j] + sd->indexed_bonus.subele[ELE_ALL] + sd->indexed_bonus.subele_script[ELE_ALL]);
 	}
-	
+
 	for (i = 0; output_table[i].format != NULL; i++) {
 		sprintf(output, output_table[i].format, output_table[i].value);
 		clif_displaymessage(fd, output);
