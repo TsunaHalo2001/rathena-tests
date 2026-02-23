@@ -139,3 +139,22 @@ ACMD_FUNC(resist) {
 	}
 	return 0;
 }
+/*
+ACMD_FUNC(attack) {
+	char output[CHAT_SIZE_MAX];
+	int i, j;
+	struct {
+		const char* format;
+		int value;
+	} output_table[] = {
+		{ "   [ %d ] atk_rate", 0 }, // 0
+
+
+		{ NULL, 0 }
+	};
+
+	memset(output, '\0', sizeof(output));
+	clif_displaymessage(sd->fd, "========= Bonus de Ataque Totales (test) =========");
+
+	output_table[0].value = sd->bonus.atk_rate;
+}*/

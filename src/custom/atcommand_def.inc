@@ -10,3 +10,4 @@
 
 //ACMD_DEF(newcommand),
 ACMD_DEF(resist),
+//ACMD_DEF(attack),
