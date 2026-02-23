@@ -124,7 +124,7 @@ ACMD_FUNC(resist) {
 	}
 
 	for (j = 0; j <= 13; j++) {
-		output_table[j + 39].value = sd->indexed_bonus.subrace2[j]
+		output_table[j + 39].value = sd->indexed_bonus.subrace2[j];
 	}
 
 	output_table[53].value = sd->bonus.long_attack_def_rate;
