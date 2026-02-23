@@ -85,13 +85,11 @@ ACMD_FUNC(resist) {
 		{ "   [ %d ] Resistencia a Splendide", 0 },
 		{ "   [ %d ] Resistencia a Scaraba", 0 }, // 52
 
-		{ "   [ %d ] Resistencia al dano a distancia", 0 } // 53
+		{ "   [ %d ] Resistencia al dano a distancia", 0 }, // 53
 		{ "   [ %d ] Resistencia al dano cuerpo a cuerpo", 0 },
 		{ "   [ %d ] Inmunidad a las armas", 0 },
 		{ "   [ %d ] Inmunidad a la magia", 0 },
 		{ "   [ %d ] Inmunidad a otros", 0 }, // 56
-
-		{ "   [ %d ]", 0},
 
 		{ NULL, 0 }
 	};
