@@ -505,15 +505,15 @@ OnInit:
 	// Settings
 	.FourthClass = true;				// Enable fourth classes?
 	.FourthExpanded = true;				// Enable new expanded fourth classes: Ex. Hyper Novice, Rebellion, Shinkiro/Shiranui?
-	.ThirdClass = false;					// Enable third classes?
-	.RebirthClass = false;				// Enable rebirth classes?
-	.SecondExpanded = false;				// Enable new expanded second classes: Ex. Super Novice, Kagerou/Oboro, Rebellion?
-	.BabyNovice = false;					// Enable Baby novice classes? Disable it if you like player must have parent to get job baby.
-	.BabyClass = false;					// Enable Baby classes?
-	.BabyThird = false;					// Enable Baby third classes?
-	.BabyExpanded = false;				// Enable Baby Expanded classes: Ex. Baby Ninja, Baby Taekwon, etc.
-	.BabySummoner = false;				// Enable Baby Summoner?
-	.LastJob = false;					// Enforce linear class changes?
+	.ThirdClass = true;					// Enable third classes?
+	.RebirthClass = true;				// Enable rebirth classes?
+	.SecondExpanded = true;				// Enable new expanded second classes: Ex. Super Novice, Kagerou/Oboro, Rebellion?
+	.BabyNovice = true;					// Enable Baby novice classes? Disable it if you like player must have parent to get job baby.
+	.BabyClass = true;					// Enable Baby classes?
+	.BabyThird = true;					// Enable Baby third classes?
+	.BabyExpanded = true;				// Enable Baby Expanded classes: Ex. Baby Ninja, Baby Taekwon, etc.
+	.BabySummoner = true;				// Enable Baby Summoner?
+	.LastJob = true;					// Enforce linear class changes?
 	.SkillPointCheck = true;			// Force player to use up all skill points?
 	.Platinum = true;					// Get platinum skills automatically?
 	.GetJobEquip = false;				// Get job equipment (mostly weapons) on job change?
