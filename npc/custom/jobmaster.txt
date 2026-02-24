@@ -147,8 +147,8 @@ function	Job_Options	{
 	.@fourth_possible = Can_Change_Fourth();
 	.@third_possible = false; //Can_Change_Third();
 	.@rebirth_possible = false; //Can_Rebirth();
-	.@first_eac = false; //.@eac&EAJ_BASEMASK;
-	.@second_eac = false; //.@eac&EAJ_UPPERMASK;
+	.@first_eac = .@eac&EAJ_BASEMASK;
+	.@second_eac = .@eac&EAJ_UPPERMASK;
 	// Note: These are already set in pc.cpp
 	// BaseClass = roclass(.@eac&EAJ_BASEMASK) which is the players First Class
 	// BaseJob = roclass(.@eac&EAJ_UPPERMASK) which is the players Second Class
