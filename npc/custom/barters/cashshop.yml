@@ -1184,6 +1184,12 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 10
+      - Index: 178
+        Item: Moroc_Slave_TW
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 10
   - Name: cash_shop_garment
     Items:
       - Index: 0
