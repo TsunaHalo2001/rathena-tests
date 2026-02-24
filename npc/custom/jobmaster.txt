@@ -145,8 +145,8 @@ function	Job_Options	{
 	// initialisation
 	.@eac = eaclass();
 	.@fourth_possible = Can_Change_Fourth();
-	.@third_possible = false; //Can_Change_Third();
-	.@rebirth_possible = false; //Can_Rebirth();
+	.@third_possible = Can_Change_Third();
+	.@rebirth_possible = Can_Rebirth();
 	.@first_eac = .@eac&EAJ_BASEMASK;
 	.@second_eac = .@eac&EAJ_UPPERMASK;
 	// Note: These are already set in pc.cpp
