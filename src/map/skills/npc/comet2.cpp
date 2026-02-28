@@ -5,6 +5,7 @@
 
 #include "map/pc.hpp"
 #include "map/status.hpp"
+#include "common/utils.hpp"
 
 SkillComet2::SkillComet2() : SkillImpl(NPC_COMET) {
 }
