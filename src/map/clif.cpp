@@ -3665,7 +3665,7 @@ void clif_updatestatus( map_session_data& sd, enum _sp type ){
 			// On officials the HP never go below 1, even if you die [Lemongrass]
 			// On officials the HP Novice class never go below 50%, even if you die [Napster]
 			if (sd.battle_status.hp == 0) {
-				clif_par_change(sd, type, (sd.class_&MAPID_THIRDMASK) != MAPID_NOVICE ? 1 : sd.battle_status.max_hp/2);
+				clif_par_change(sd, type, (sd.class_&MAPID_SECONDMASK) != MAPID_NOVICE ? 1 : sd.battle_status.max_hp/2);
 			} else {
 				clif_par_change(sd, type, sd.battle_status.hp);
 			}
@@ -11111,7 +11111,7 @@ void clif_parse_LoadEndAck(int32 fd,map_session_data *sd)
 	if(!sd->state.autotrade && mapdata->getMapFlag(MF_LOADEVENT)) // Lance
 		npc_script_event( *sd, NPCE_LOADMAP );
 
-	if (pc_checkskill(sd, SG_DEVIL) && ((sd->class_&MAPID_THIRDMASK) == MAPID_STAR_EMPEROR || pc_is_maxjoblv(sd)))
+	if (pc_checkskill(sd, SG_DEVIL) && ((sd->class_&MAPID_SECONDMASK) == MAPID_STAR_EMPEROR || pc_is_maxjoblv(sd)))
 		clif_status_load(sd, EFST_DEVIL1, 1);  //blindness [Komurka]
 
 	if (sd->sc.opt2) //Client loses these on warp.
@@ -15238,7 +15238,7 @@ void clif_parse_NoviceDoriDori(int32 fd, map_session_data *sd)
 {
 	if (sd->state.doridori) return;
 
-	switch (sd->class_&MAPID_THIRDMASK) {
+	switch (sd->class_&MAPID_SECONDMASK) {
 		case MAPID_SOUL_LINKER:
 		case MAPID_STAR_GLADIATOR:
 		case MAPID_TAEKWON:
@@ -15265,7 +15265,7 @@ void clif_parse_NoviceDoriDori(int32 fd, map_session_data *sd)
 ///       "Help me out~ Please~ T_T"
 void clif_parse_NoviceExplosionSpirits(int32 fd, map_session_data *sd)
 {
-	if( (sd->class_&MAPID_THIRDMASK) == MAPID_SUPER_NOVICE ) {
+	if( (sd->class_&MAPID_SECONDMASK) == MAPID_SUPER_NOVICE ) {
 		t_exp next = pc_nextbaseexp(sd);
 
 		if( next ) {
@@ -20114,7 +20114,7 @@ void clif_ranklist( map_session_data& sd, e_rank rankingtype ){
 		p.points[i] = 0;
 	}
 
-	switch( sd.class_&MAPID_THIRDMASK ){
+	switch( sd.class_&MAPID_SECONDMASK ){
 		case MAPID_BLACKSMITH:
 		case MAPID_ALCHEMIST:
 		case MAPID_TAEKWON:
@@ -20133,7 +20133,7 @@ void clif_ranklist( map_session_data& sd, e_rank rankingtype ){
 	p.type = rankingtype;
 	clif_sub_ranklist( p.list, rankingtype );
 
-	switch( sd.class_&MAPID_THIRDMASK ){
+	switch( sd.class_&MAPID_SECONDMASK ){
 		case MAPID_BLACKSMITH:
 		case MAPID_ALCHEMIST:
 		case MAPID_TAEKWON:
