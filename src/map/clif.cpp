@@ -82,7 +82,7 @@ struct s_packet_db packet_db[MAX_PACKET_DB + 1];
 unsigned long color_table[COLOR_MAX];
 
 #include "clif_obfuscation.hpp"
-static bool clif_session_isValid(map_session_data *sd);
+static bool clif_session_isValid(const map_session_data *sd);
 static void clif_loadConfirm( map_session_data *sd );
 static void clif_favorite_item( map_session_data& sd, uint16 index );
 
@@ -384,7 +384,7 @@ static inline unsigned char clif_bl_type(block_list *bl, bool walking) {
 }
 #endif
 
-static bool clif_session_isValid(map_session_data *sd) {
+static bool clif_session_isValid(const map_session_data *sd) {
 	return ( sd != nullptr && session_isActive(sd->fd) );
 }
 
