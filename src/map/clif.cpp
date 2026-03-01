@@ -474,7 +474,7 @@ static int32 clif_send_sub(block_list *bl, va_list ap)
  * Packet Delegation (called on all packets that require data to be sent to more than one client)
  * functions that are sent solely to one use whose ID it posses use WFIFOSET
  *------------------------------------------*/
-int32 clif_send(const void* buf, int32 len, block_list* bl, enum send_target type)
+int32 clif_send(const void* buf, int32 len, const block_list* bl, enum send_target type)
 {
 	int32 i;
 	map_session_data *sd, *tsd;
