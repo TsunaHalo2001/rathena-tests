@@ -477,7 +477,7 @@ static int32 clif_send_sub(block_list *bl, va_list ap)
 int32 clif_send(const void* buf, int32 len, const block_list* bl, enum send_target type)
 {
 	int32 i;
-	map_session_data *sd, *tsd;
+	const map_session_data *sd, *tsd;
 	struct party_data *p = nullptr;
 	std::shared_ptr<s_battleground_data> bg;
 	int32 x0 = 0, x1 = 0, y0 = 0, y1 = 0, fd;
