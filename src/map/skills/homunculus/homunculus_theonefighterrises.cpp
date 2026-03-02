@@ -7,8 +7,6 @@
 #include "map/homunculus.hpp"
 #include "map/map.hpp"
 #include "map/pc.hpp"
-#include "map/status.hpp"
-#include "map/pc.hpp"
 
 SkillTheOneFighterRises::SkillTheOneFighterRises() : SkillImplRecursiveDamageSplash(MH_THE_ONE_FIGHTER_RISES) {
 }
