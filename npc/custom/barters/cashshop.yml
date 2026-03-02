@@ -4086,3 +4086,15 @@ Body:
           - Index: 0
             Item: Espantaviejas_ticket
             Amount: 5
+      - Index: 6
+        Item: Yortus_Bishop_Card
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 5
+      - Index: 7
+        Item: MD_Airboat_Card5
+        RequiredItems:
+          - Index: 0
+            Item: Espantaviejas_ticket
+            Amount: 5
