@@ -6,6 +6,7 @@
 #include "map/clif.hpp"
 #include "map/homunculus.hpp"
 #include "map/map.hpp"
+#include "map/pc.hpp"
 #include "map/status.hpp"
 #include "map/pc.hpp"
 

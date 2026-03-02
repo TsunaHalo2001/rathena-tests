@@ -4,6 +4,7 @@
 #include "changelocation.hpp"
 
 #include "map/clif.hpp"
+#include "map/mob.hpp"
 #include "map/status.hpp"
 #include "map/mob.hpp"
 
