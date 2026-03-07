@@ -26,6 +26,7 @@
 #include "./ninja/skill_factory_ninja.hpp"
 #include "./novice/skill_factory_novice.hpp"
 #include "./other/skill_factory_other.hpp"
+#include "./other/skill_factory_other.cpp"
 #include "./summoner/skill_factory_summoner.hpp"
 #include "./swordman/skill_factory_swordman.hpp"
 #include "./taekwon/skill_factory_taekwon.hpp"
