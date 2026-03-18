@@ -41,7 +41,7 @@
 #include "divesthelm.hpp"
 #include "divestshield.hpp"
 #include "divestweapon.hpp"
-#include "doubleattack.cpp"
+#include "doubleattack.hpp"
 #include "emergencyescape.hpp"
 #include "enchantdeadlypoison.hpp"
 #include "enchantpoison.hpp"

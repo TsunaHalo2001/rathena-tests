@@ -14,7 +14,7 @@
 #include "basicgrenade.hpp"
 #include "bindtrap.hpp"
 #include "bullseye.hpp"
-#include "chainaction.cpp"
+#include "chainaction.hpp"
 #include "cracker.hpp"
 #include "crimsonmarker.hpp"
 #include "desperado.hpp"
