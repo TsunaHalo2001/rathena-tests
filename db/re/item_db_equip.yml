@@ -98511,9 +98511,12 @@ Body:
     Weight: 100
     Locations:
       Head_Low: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoAuction: true
     ArmorLevel: 1
     EquipLevelMin: 100
-    Refineable: true
     View: 1034
     Script: |
       bonus bAllStats,1;
@@ -112943,10 +112946,13 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     EquipLevelMin: 1
-    Refineable: true
     View: 5
     Trade:
       NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
   - Id: 20728
     AegisName: Water_Dragon_Coat
     Name: Water Dragon Coat
@@ -179884,6 +179890,26 @@ Body:
          bonus bPerfectHitAddRate,25;
          bonus bDelayrate,-20;
       }
+  - Id: 400761
+    AegisName: C_Work_Cap
+    Name: Costume Work Cap
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    Trade:
+      NoDrop: true
+    ArmorLevel: 1
+    View: 1793
+  - Id: 400762
+    AegisName: C_Red_Head_Dress
+    Name: Costume Red Head Dress
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    Trade:
+      NoDrop: true
+    ArmorLevel: 1
+    View: 2657
   - Id: 400767
     AegisName: aegis_400767
     Name: Costume Oriental Wig    # !todo check english name
@@ -179949,6 +179975,33 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2521
+  - Id: 400793
+    AegisName: C_Satanic_Crown
+    Name: Costume Satanic Crown
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+    ArmorLevel: 1
+    View: 2523
+  - Id: 400794
+    AegisName: C_Many_Flowers_Love
+    Name: Costume Many Flowers Love    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2575
   - Id: 400795
     AegisName: C_Thornbush_Hairband_BU
     Name: Costume Thornbush Hairband (Blue)
@@ -179980,6 +180033,50 @@ Body:
       NoGuildStorage: false
       NoMail: false
       NoAuction: true
+  - Id: 400898
+    AegisName: C_Sakura_Witch_Hat_W
+    Name: Costume Cherry Blossom Witch Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2582
+  - Id: 400899
+    AegisName: C_Striking_hat_A
+    Name: Costume Invincible Crest Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    Trade:
+      NoDrop: true
+    ArmorLevel: 1
+    View: 2391
+  - Id: 400900
+    AegisName: C_Majestic_Helmet_BL
+    Name: Costume Majestic Helmet (Black)
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2686
+  - Id: 400901
+    AegisName: C_Frog_Cap_BW
+    Name: Costume Frog Cap (Brown)    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2687
   - Id: 400913
     AegisName: C_CLB_DT_TS_Mini
     Name: "Costume: Toothless Mini"
@@ -186338,6 +186435,20 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2656
+  - Id: 410388
+    AegisName: C_Victory_Ear_JP
+    Name: Costume Ear of Victory
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    Trage:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 1185
   - Id: 410392
     AegisName: aegis_410392
     Name: Costume Thanatos's Dolor Mask
@@ -186354,6 +186465,19 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2667
+  - Id: 410396
+    AegisName: C_Dark_Night_Veil_V
+    Name: Costume Dark Night Veil
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+    ArmorLevel: 1
+    View: 1303
   - Id: 410399
     AegisName: C_Capybara
     Name: Costume Capybara
@@ -186362,6 +186486,20 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2680
+  - Id: 410429
+    AegisName: C_Dokkebi_Mask_V
+    Name: Costume Dokkebi Mask (Middle)
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 689
   - Id: 410430
     AegisName: C_Blink_Eyes_Forest
     Name: Costume Blinking Forest Eyes    # !todo check english name
@@ -190416,6 +190554,28 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2653
+  - Id: 420433
+    AegisName: C_Knit_Ribbon_Lowtwin
+    Name: Costume Braided Twin Ribbons
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2654
+  - Id: 420434
+    AegisName: C_Knit_Ribbon_Lowtwin_N
+    Name: Costume Braided Twin Ribbons (No Decoration)
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    Trade:
+      NoDrop: true
+    ArmorLevel: 1
+    View: 2655
   - Id: 420435
     AegisName: C_Sberry_Donut_In_Mouth
     Name: Costume Strawberry Donut in Mouth    # !todo check english name
@@ -190440,6 +190600,14 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     View: 2666
+  - Id: 420447
+    AegisName: aegis_420447
+    Name: Costume Emerald Rose    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2526
   - Id: 420448
     AegisName: C_Deep_You_N
     Name: Costume Abyssal
@@ -190474,6 +190642,42 @@ Body:
       hateffect HAT_EF_HANMAC_MUNCH,true;
     UnEquipScript: |
       hateffect HAT_EF_HANMAC_MUNCH,false;
+  - Id: 420499
+    AegisName: C_CB_Fullb_Twintails
+    Name: Costume Sakura Twin tails
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2682
+  - Id: 420500
+    AegisName: C_CB_Fullb_Twosideup
+    Name: Costume Sakura Two side up
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2683
+  - Id: 420501
+    AegisName: C_Hot_Spring
+    Name: Costume Hot Spring
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 2684
   - Id: 420511
     AegisName: C_Over_Cloud
     Name: Costume Over the Clouds
@@ -218755,6 +218959,18 @@ Body:
              }
          }
       }
+  - Id: 480555
+    AegisName: C_Lapine_Wing
+    Name: Costume Laphine Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 260
   - Id: 480456
     AegisName: aegis_480456
     Name: Costume Houseplant Outing Set
@@ -219729,6 +219945,30 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 256
+  - Id: 480524
+    AegisName: C_Giant_Teddy_Bear
+    Name: Costume Giant Teddy Bear
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 253
+  - Id: 480525
+    AegisName: C_Pitaya_GG_Parfait
+    Name: Costume Pitaya Garden Parfait
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 257
   - Id: 480526
     AegisName: Occult_Nature_Cape_LT
     Name: Graceful Force of Nature Cloak-LT
@@ -220012,6 +220252,32 @@ Body:
       NoGuildStorage: false
       NoMail: true
       NoAuction: true
+  - Id: 480581
+    AegisName: C_I_Samurai_Sword
+    Name: Costume Samurai Twin Sword
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    Trade:
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 265
+  - Id: 480582
+    AegisName: C_3color_dumplings_P
+    Name: Costume Three Color Dumplings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoMail: true
+      NoAuction: true
+      NoGuildStorage: true
+    ArmorLevel: 1
+    View: 266
   - Id: 480595
     AegisName: C_CLB_DT_TS_Wing
     Name: "Costume: Toothless Wings"
