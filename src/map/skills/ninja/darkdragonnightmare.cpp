@@ -19,7 +19,7 @@ void SkillDarkDragonNightmare::applyAdditionalEffects(block_list *src, block_lis
 void SkillDarkDragonNightmare::calculateSkillRatio(const Damage *wd, const block_list *src, const block_list *target, uint16 skill_lv, int32 &skillratio, int32 mflag) const {
 	const status_data* sstatus = status_get_status_data(*src);
 
-	skillratio += -100 + 15500 * skill_lv;
+	skillratio += -100 + 17500 * skill_lv;
 	skillratio += 5 * sstatus->spl;
 	RE_LVL_DMOD(100);
 }
@@ -42,4 +42,9 @@ void SkillDarkDragonNightmare::castendNoDamageId(block_list *src, block_list *ta
 	clif_skill_nodamage(src, *target, getSkillId(), skill_lv);
 
 	map_foreachinrange( skill_area_sub, target, range, BL_CHAR, src, getSkillId(), skill_lv, tick, flag | BCT_ENEMY | SD_SPLASH | 1, skill_castend_damage_id );
+}
+
+void SkillDarkDragonNightmare::modifyElement(const Damage& dmg, const block_list& src, const block_list& target, uint16 skill_lv, int32& element, int32 flag) const {
+	if (dmg.miscflag & SKILL_ALTDMG_FLAG)
+		element = ELE_FIRE;
 }

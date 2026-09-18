@@ -16,7 +16,7 @@ void SkillImperialPressure::calculateSkillRatio(const Damage* wd, const block_li
 	const map_session_data* sd = BL_CAST(BL_PC, src);
 	const status_data* sstatus = status_get_status_data(*src);
 
-	skillratio += -100 + 5600 + 1850 * skill_lv;
+	skillratio += -100 + 3750 + 2650 * skill_lv;
 	skillratio += 7 * sstatus->spl;
 	skillratio += 50 * pc_checkskill(sd, IG_SPEAR_SWORD_M);
 	RE_LVL_DMOD(100);
@@ -26,4 +26,11 @@ void SkillImperialPressure::splashSearch(block_list* src, block_list* target, ui
 	clif_skill_nodamage(src, *target, getSkillId(), skill_lv);
 
 	SkillImplRecursiveDamageSplash::splashSearch(src, target, skill_lv, tick, flag);
+}
+
+void SkillImperialPressure::modifyElement(const Damage& dmg, const block_list& src, const block_list& target, uint16 skill_lv, int32& element, int32 flag) const {
+	const status_change* sc = status_get_sc(&src);
+
+	if (sc != nullptr && sc->hasSCE(SC_GUARD_STANCE))
+		element = ELE_HOLY;
 }

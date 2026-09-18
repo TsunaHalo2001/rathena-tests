@@ -10,9 +10,7 @@
 // This will save compile time
 #ifndef MAP_GENERATOR
 
-// Include .hpp files into the TU to optimize compile time
-// For reference see unity builds or amalgamated builds
-#include "./skill_impl.hpp"
+// Include job factory headers for the create() dispatcher
 #include "./acolyte/skill_factory_acolyte.hpp"
 #include "./archer/skill_factory_archer.hpp"
 #include "./custom/skill_factory_custom.hpp"
@@ -25,7 +23,6 @@
 #include "./npc/skill_factory_npc.hpp"
 #include "./ninja/skill_factory_ninja.hpp"
 #include "./novice/skill_factory_novice.hpp"
-#include "./other/skill_factory_other.hpp"
 #include "./other/skill_factory_other.hpp"
 #include "./summoner/skill_factory_summoner.hpp"
 #include "./swordman/skill_factory_swordman.hpp"
