@@ -1813,7 +1813,7 @@ void clif_hominfo( const map_session_data* sd, const homun_data *hd, int32 flag 
 	nullpo_retv( sd );
 	nullpo_retv( hd );
 
-	struct status_data *status = &hd->battle_status;
+	const status_data* status = &hd->battle_status;
 	PACKET_ZC_PROPERTY_HOMUN p = {};
 
 	p.packetType = HEADER_ZC_PROPERTY_HOMUN;
